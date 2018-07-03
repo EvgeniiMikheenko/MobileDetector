@@ -1,0 +1,82 @@
+#include <LPC17xx.H>
+#include <system_LPC17xx.h>
+#include <lpc17xx_pinsel.h>
+#include <lpc17xx_gpio.h>
+#include <lpc17xx_systick.h>
+//#include <lpc17xx_uart.h>
+//#include <lpc17xx_ssp.h>
+#include <lpc17xx_pwm.h>
+//#include <stdbool.h>
+//#include <stdlib.h>
+//#include <stdint.h>
+#include <LPC17xx_timer.h>
+
+
+
+int main(){
+	
+
+
+// PWN CONFIGURATION + INITALIZATION   PWM1.3
+	
+	//LPC_SC -> PCONP = (1 << 6);
+	//LPC_SC -> PCLKSEL0 = (1 << 12);
+	
+	LPC_PINCON -> PINSEL7 = (1 << 20) | (1 << 21);
+	
+	
+	LPC_PWM1 -> MR0 = 1000;      //  ?10 kHz 
+	
+	LPC_PWM1 -> MCR |= 1 << 1; 
+	
+	LPC_PWM1->LER = 0xff;
+	
+	
+	LPC_PWM1 -> MR3 = 200;
+	
+	LPC_PWM1 -> TCR = 0x9;
+	
+	LPC_PWM1 -> PCR = 0x800;
+	
+	LPC_PWM1->LER = 0xff;
+	
+	//PWM_TIMERCFG_Type init_cfg;
+	
+	//init_cfg.PrescaleOption = PWM_TIMER_PRESCALE_USVAL;			//Prescale in microsecond value
+	//init_cfg.PrescaleValue = 0x1000;
+	
+	
+	
+	
+	//PWM_ConfigStructInit(PWM_MODE_TIMER, &init_cfg);			
+				
+	//PWM_Init(LPC_PWM1, PWM_MODE_TIMER, &init_cfg);
+	
+	//PWM_Cmd(LPC_PWM1, ENABLE);
+	
+	//PWM_CounterCmd(LPC_PWM1, ENABLE);
+	
+	//PWM_ResetCounter(LPC_PWM1);
+	
+	
+	
+	
+	
+	int i = 0;
+
+	
+	while(1){
+		for(volatile int j = 0; j < 1000000; j++) {}
+		LPC_PWM1 -> MR3 = i;
+		LPC_PWM1->LER = 0xff;
+		
+		if((++i) >= LPC_PWM1 -> MR0 )
+			i = 0;
+	};
+	
+	
+	
+}
+
+
+

@@ -1,0 +1,15 @@
+D:\work\VS12\Projects\Libs\common.utils\bin\Debug\common.utils.dll
+D:\work\VS12\Projects\Libs\common.utils\bin\Debug\common.utils.pdb
+D:\work\VS12\Projects\Libs\common.utils\obj\Debug\common.utils.dll
+D:\work\VS12\Projects\Libs\common.utils\obj\Debug\common.utils.pdb
+D:\work\VS12\Projects\Libs\common.utils\obj\Debug\common.utils.csprojResolveAssemblyReference.cache
+F:\work\VS13\Projects\Libs\common.utils\bin\Debug\common.utils.dll
+F:\work\VS13\Projects\Libs\common.utils\bin\Debug\common.utils.pdb
+F:\work\VS13\Projects\Libs\common.utils\obj\Debug\common.utils.csprojResolveAssemblyReference.cache
+F:\work\VS13\Projects\Libs\common.utils\obj\Debug\common.utils.dll
+F:\work\VS13\Projects\Libs\common.utils\obj\Debug\common.utils.pdb
+D:\work\VS13\Projects\Libs\common.utils\bin\Debug\common.utils.dll
+D:\work\VS13\Projects\Libs\common.utils\bin\Debug\common.utils.pdb
+D:\work\VS13\Projects\Libs\common.utils\obj\Debug\common.utils.dll
+D:\work\VS13\Projects\Libs\common.utils\obj\Debug\common.utils.pdb
+D:\work\VS13\Projects\Libs\common.utils\obj\Debug\common.utils.csprojResolveAssemblyReference.cache

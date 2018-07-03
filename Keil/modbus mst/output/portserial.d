@@ -1,0 +1,14 @@
+.\output\portserial.o: freemodbus\lpc1768\port\portserial.c
+.\output\portserial.o: freemodbus\lpc1768\port\port.h
+.\output\portserial.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\assert.h
+.\output\portserial.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.H
+.\output\portserial.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h
+.\output\portserial.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\output\portserial.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h
+.\output\portserial.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h
+.\output\portserial.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h
+.\output\portserial.o: ..\sip_keil\lpc17xx_lib\include\lpc17xx_uart.h
+.\output\portserial.o: ..\sip_keil\lpc17xx_lib\include\lpc_types.h
+.\output\portserial.o: .\freemodbus\modbus\include\mb.h
+.\output\portserial.o: .\freemodbus\modbus\include\mbport.h
+.\output\portserial.o: .\freemodbus\modbus\include\mbproto.h

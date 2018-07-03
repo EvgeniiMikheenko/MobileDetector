@@ -1,0 +1,9 @@
+.\obj\main.o: main.c
+.\obj\main.o: main.h
+.\obj\main.o: C:\Keil_4_74\ARM\Inc\ST\STM32F10x\stm32f10x.h
+.\obj\main.o: C:\Keil_4_74\ARM\CMSIS\Include\core_cm3.h
+.\obj\main.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\main.o: C:\Keil_4_74\ARM\CMSIS\Include\core_cmInstr.h
+.\obj\main.o: C:\Keil_4_74\ARM\CMSIS\Include\core_cmFunc.h
+.\obj\main.o: C:\Keil_4_74\ARM\Inc\ST\STM32F10x\system_stm32f10x.h
+.\obj\main.o: .\config\stm32f10x_conf.h

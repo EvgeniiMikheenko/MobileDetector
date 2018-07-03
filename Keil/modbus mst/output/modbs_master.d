@@ -1,0 +1,15 @@
+.\output\modbs_master.o: modbs_master.c
+.\output\modbs_master.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.H
+.\output\modbs_master.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h
+.\output\modbs_master.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\output\modbs_master.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h
+.\output\modbs_master.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h
+.\output\modbs_master.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h
+.\output\modbs_master.o: ..\sip_keil\lpc17xx_lib\include\lpc17xx_pinsel.h
+.\output\modbs_master.o: ..\sip_keil\lpc17xx_lib\include\lpc_types.h
+.\output\modbs_master.o: ..\sip_keil\lpc17xx_lib\include\lpc17xx_uart.h
+.\output\modbs_master.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\string.h
+.\output\modbs_master.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdbool.h
+.\output\modbs_master.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdio.h
+.\output\modbs_master.o: ..\sip_keil\lpc17xx_lib\include\lpc17xx_timer.h
+.\output\modbs_master.o: modbs_master.h

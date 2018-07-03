@@ -1,0 +1,12 @@
+.\output\mbfuncholding.o: FreeModbus\modbus\functions\mbfuncholding.c
+.\output\mbfuncholding.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdlib.h
+.\output\mbfuncholding.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\string.h
+.\output\mbfuncholding.o: .\FreeModbus\port\port.h
+.\output\mbfuncholding.o: .\FreeModbus\modbus\include\mbconfig.h
+.\output\mbfuncholding.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\assert.h
+.\output\mbfuncholding.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\inttypes.h
+.\output\mbfuncholding.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\output\mbfuncholding.o: .\FreeModbus\modbus\include\mb.h
+.\output\mbfuncholding.o: .\FreeModbus\modbus\include\mbport.h
+.\output\mbfuncholding.o: .\FreeModbus\modbus\include\mbproto.h
+.\output\mbfuncholding.o: .\FreeModbus\modbus\include\mbframe.h

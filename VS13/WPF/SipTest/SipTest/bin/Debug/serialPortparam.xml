@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerialPortParams>
+  <Name>COM3</Name>
+  <Baudrate>Bps115200</Baudrate>
+  <DataBits>DataBits8</DataBits>
+  <Parity>None</Parity>
+  <StopBits>One</StopBits>
+  <Handshake>None</Handshake>
+</SerialPortParams>

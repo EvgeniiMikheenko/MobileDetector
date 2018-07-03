@@ -1,0 +1,16 @@
+.\output\mbfuncinput.o: freemodbus\modbus\functions\mbfuncinput.c
+.\output\mbfuncinput.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdlib.h
+.\output\mbfuncinput.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\string.h
+.\output\mbfuncinput.o: .\freemodbus\lpc1768\port\port.h
+.\output\mbfuncinput.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\assert.h
+.\output\mbfuncinput.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.H
+.\output\mbfuncinput.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h
+.\output\mbfuncinput.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\output\mbfuncinput.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h
+.\output\mbfuncinput.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h
+.\output\mbfuncinput.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h
+.\output\mbfuncinput.o: .\freemodbus\modbus\include\mb.h
+.\output\mbfuncinput.o: .\freemodbus\modbus\include\mbport.h
+.\output\mbfuncinput.o: .\freemodbus\modbus\include\mbproto.h
+.\output\mbfuncinput.o: .\freemodbus\modbus\include\mbframe.h
+.\output\mbfuncinput.o: .\freemodbus\modbus\include\mbconfig.h

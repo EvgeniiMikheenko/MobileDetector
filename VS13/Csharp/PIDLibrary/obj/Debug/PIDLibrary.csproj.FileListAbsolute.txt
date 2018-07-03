@@ -1,0 +1,16 @@
+D:\work\VS10\Projects\CSharp\PIDLibrary\bin\Debug\PidLibrary.dll
+D:\work\VS10\Projects\CSharp\PIDLibrary\bin\Debug\PidLibrary.pdb
+D:\work\VS10\Projects\CSharp\PIDLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\work\VS10\Projects\CSharp\PIDLibrary\obj\Debug\PidLibrary.dll
+D:\work\VS10\Projects\CSharp\PIDLibrary\obj\Debug\PidLibrary.pdb
+D:\work\VS13\Projects\Csharp\PIDLibrary\bin\Debug\PidLibrary.dll
+D:\work\VS13\Projects\Csharp\PIDLibrary\bin\Debug\PidLibrary.pdb
+D:\work\VS13\Projects\Csharp\PIDLibrary\obj\Debug\PIDLibrary.csprojResolveAssemblyReference.cache
+D:\work\VS13\Projects\Csharp\PIDLibrary\obj\Debug\Controls\PIDParams.g.cs
+D:\work\VS13\Projects\Csharp\PIDLibrary\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\work\VS13\Projects\Csharp\PIDLibrary\obj\Debug\PidLibrary_MarkupCompile.cache
+D:\work\VS13\Projects\Csharp\PIDLibrary\obj\Debug\PidLibrary_MarkupCompile.lref
+D:\work\VS13\Projects\Csharp\PIDLibrary\obj\Debug\Controls\PIDParams.baml
+D:\work\VS13\Projects\Csharp\PIDLibrary\obj\Debug\PidLibrary.g.resources
+D:\work\VS13\Projects\Csharp\PIDLibrary\obj\Debug\PidLibrary.dll
+D:\work\VS13\Projects\Csharp\PIDLibrary\obj\Debug\PidLibrary.pdb

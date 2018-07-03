@@ -1,0 +1,12 @@
+.\output\portevent.o: freemodbus\lpc1768\port\portevent.c
+.\output\portevent.o: .\freemodbus\modbus\include\mb.h
+.\output\portevent.o: .\freemodbus\lpc1768\port\port.h
+.\output\portevent.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\assert.h
+.\output\portevent.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.H
+.\output\portevent.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h
+.\output\portevent.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\output\portevent.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h
+.\output\portevent.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h
+.\output\portevent.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h
+.\output\portevent.o: .\freemodbus\modbus\include\mbport.h
+.\output\portevent.o: .\freemodbus\modbus\include\mbproto.h

@@ -1,0 +1,11 @@
+.\lpc17xx_uart.o: ..\sip_keil\lpc17xx_lib\source\lpc17xx_uart.c
+.\lpc17xx_uart.o: ..\sip_keil\lpc17xx_lib\include\lpc17xx_uart.h
+.\lpc17xx_uart.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.h
+.\lpc17xx_uart.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h
+.\lpc17xx_uart.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\lpc17xx_uart.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h
+.\lpc17xx_uart.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h
+.\lpc17xx_uart.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h
+.\lpc17xx_uart.o: ..\sip_keil\lpc17xx_lib\include\lpc_types.h
+.\lpc17xx_uart.o: ..\sip_keil\lpc17xx_lib\include\lpc17xx_clkpwr.h
+.\lpc17xx_uart.o: ..\sip_keil\lpc17xx_lib\include\lpc17xx_libcfg_default.h

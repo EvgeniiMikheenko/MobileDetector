@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SipTest", "SipTest\SipTest.csproj", "{E31D13CB-DB8B-4B62-8DE9-473022E7D1DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common", "..\..\Libs\common\common.csproj", "{94F91414-F2E3-443D-8060-B96E6BB1B5AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common.plugins", "..\..\Libs\common.plugins\common.plugins.csproj", "{ED51BB2A-1BC9-4C29-B7AF-5B5B362E5370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common.utils", "..\..\Libs\common.utils\common.utils.csproj", "{9961D1FB-02A2-4EBE-9824-30544B63CF45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "serialPortLib", "..\..\Libs\serialPortLib\serialPortLib.csproj", "{7B559D12-2CF8-4F2D-976A-9D94609E447C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PIDLibrary", "..\..\Csharp\PIDLibrary\PIDLibrary.csproj", "{77779B23-3E2C-4B2F-9F88-4DD14F9580F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E31D13CB-DB8B-4B62-8DE9-473022E7D1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E31D13CB-DB8B-4B62-8DE9-473022E7D1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E31D13CB-DB8B-4B62-8DE9-473022E7D1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E31D13CB-DB8B-4B62-8DE9-473022E7D1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94F91414-F2E3-443D-8060-B96E6BB1B5AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F91414-F2E3-443D-8060-B96E6BB1B5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F91414-F2E3-443D-8060-B96E6BB1B5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F91414-F2E3-443D-8060-B96E6BB1B5AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED51BB2A-1BC9-4C29-B7AF-5B5B362E5370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED51BB2A-1BC9-4C29-B7AF-5B5B362E5370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED51BB2A-1BC9-4C29-B7AF-5B5B362E5370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED51BB2A-1BC9-4C29-B7AF-5B5B362E5370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9961D1FB-02A2-4EBE-9824-30544B63CF45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9961D1FB-02A2-4EBE-9824-30544B63CF45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9961D1FB-02A2-4EBE-9824-30544B63CF45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9961D1FB-02A2-4EBE-9824-30544B63CF45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B559D12-2CF8-4F2D-976A-9D94609E447C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B559D12-2CF8-4F2D-976A-9D94609E447C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B559D12-2CF8-4F2D-976A-9D94609E447C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B559D12-2CF8-4F2D-976A-9D94609E447C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77779B23-3E2C-4B2F-9F88-4DD14F9580F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77779B23-3E2C-4B2F-9F88-4DD14F9580F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77779B23-3E2C-4B2F-9F88-4DD14F9580F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77779B23-3E2C-4B2F-9F88-4DD14F9580F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

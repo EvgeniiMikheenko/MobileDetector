@@ -1,0 +1,13 @@
+.\output\user_mb_app.o: FreeModbus\port\user_mb_app.c
+.\output\user_mb_app.o: FreeModbus\port\user_mb_app.h
+.\output\user_mb_app.o: .\FreeModbus\modbus\include\mb.h
+.\output\user_mb_app.o: .\FreeModbus\port\port.h
+.\output\user_mb_app.o: .\FreeModbus\modbus\include\mbconfig.h
+.\output\user_mb_app.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\assert.h
+.\output\user_mb_app.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\inttypes.h
+.\output\user_mb_app.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\output\user_mb_app.o: .\FreeModbus\modbus\include\mbport.h
+.\output\user_mb_app.o: .\FreeModbus\modbus\include\mbproto.h
+.\output\user_mb_app.o: .\FreeModbus\modbus\include\mb_m.h
+.\output\user_mb_app.o: .\FreeModbus\modbus\include\mbframe.h
+.\output\user_mb_app.o: .\FreeModbus\modbus\include\mbutils.h

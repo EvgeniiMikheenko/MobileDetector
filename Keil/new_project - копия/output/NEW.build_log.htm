@@ -1,0 +1,69 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\work\Keil\new_project - копия\NEW.uvproj
+Project File Date:  10/07/2015
+
+<h2>Output:</h2>
+Build target 'Target 1'
+linking...
+Program Size: Code=4524 RO-data=236 RW-data=32 ZI-data=632  
+FromELF: creating hex file...
+".\output\NEW.axf" - 0 Error(s), 0 Warning(s).
+Load "D:\\work\\Keil\\new_project - копия\\output\\NEW.axf" 
+Set JLink Project File to "D:\work\Keil\new_project - копия\JLinkSettings.ini"
+* JLink Info: Device "LPC1768" selected.
+ 
+JLink info:
+------------
+DLL: V5.00l, compiled Aug  7 2015 15:52:45
+Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+Hardware: V8.00
+S/N : 11111118 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M3 r2p0, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: CoreSight components:
+* JLink Info: ROMTbl 0 @ E00FF000
+* JLink Info: ROMTbl 0 [0]: FFF0F000, CID: B105E00D, PID: 002BB000 SCS
+* JLink Info: ROMTbl 0 [1]: FFF02000, CID: B105E00D, PID: 002BB002 DWT
+* JLink Info: ROMTbl 0 [2]: FFF03000, CID: B105E00D, PID: 002BB003 FPB
+* JLink Info: ROMTbl 0 [3]: FFF01000, CID: B105E00D, PID: 002BB001 ITM
+* JLink Info: ROMTbl 0 [4]: FFF41000, CID: B105900D, PID: 002BB923 TPIU-Lite
+* JLink Info: ROMTbl 0 [5]: FFF42000, CID: B105900D, PID: 002BB924 ETM-M3
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: LPC1768
+VTarget = 3.267V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 500 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+</pre>
+</body>
+</html>
+c(289): warning:  #177-D: variable "trace" was declared but never referenced
+                int trace = 0;
+main.c(285): warning:  #550-D: variable "ItStatus3" was set but never used
+        uint8_t ItStatus3;
+main.c(397): warning:  #550-D: variable "readrg" was set but never used
+                        uint8_t readrg[10];
+main.c(464): warning:  #177-D: variable "k" was declared but never referenced
+                                int k = 23;
+main.c(469): warning:  #177-D: variable "hh" was declared but never referenced
+                        int hh = 0;
+main.c(473): warning:  #177-D: variable "hh" was declared but never referenced
+                        int hh = 1;
+main.c: 6 warnings, 0 errors
+"main.c" - 0 Error(s), 6 Warning(s).

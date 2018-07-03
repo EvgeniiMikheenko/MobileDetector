@@ -1,0 +1,9 @@
+.\output\mbcrc.o: freemodbus\modbus\rtu\mbcrc.c
+.\output\mbcrc.o: .\freemodbus\lpc1768\port\port.h
+.\output\mbcrc.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\assert.h
+.\output\mbcrc.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.H
+.\output\mbcrc.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h
+.\output\mbcrc.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\output\mbcrc.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h
+.\output\mbcrc.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h
+.\output\mbcrc.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h

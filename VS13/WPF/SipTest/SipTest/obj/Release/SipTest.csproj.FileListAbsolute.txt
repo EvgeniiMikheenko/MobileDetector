@@ -1,0 +1,1 @@
+D:\work\VS13\Projects\WPF\SipTest\SipTest\bin\Release\SipTest.exe.config

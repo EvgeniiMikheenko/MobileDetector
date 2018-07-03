@@ -1,0 +1,216 @@
+D:\Projects\mikeAIG2\bin\Debug\mikeAIG2.exe.config
+D:\Projects\mikeAIG2\bin\Debug\mikeAIG2.exe
+D:\Projects\mikeAIG2\bin\Debug\mikeAIG2.pdb
+D:\Projects\mikeAIG2\bin\Debug\Modbus.dll
+D:\Projects\mikeAIG2\bin\Debug\ZedGraph.dll
+D:\Projects\mikeAIG2\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\mikeAIG2\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Projects\mikeAIG2\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Projects\mikeAIG2\obj\x86\Debug\mikeAIG2.exe
+D:\Projects\mikeAIG2\obj\x86\Debug\mikeAIG2.pdb
+D:\Projects\mikeAIG2\obj\x86\Debug\LGAR.formDebugConsole.resources
+D:\Projects\mikeAIG2\obj\x86\Debug\LGAR.formDelay.resources
+D:\Projects\mikeAIG2\obj\x86\Debug\LGAR.formEthernet.resources
+D:\Projects\mikeAIG2\obj\x86\Debug\LGAR.formMain.resources
+D:\Projects\mikeAIG2\obj\x86\Debug\LGAR.formSerial.resources
+D:\Projects\mikeAIG2\obj\x86\Debug\LGAR.Properties.Resources.resources
+D:\Projects\mikeAIG2\bin\Debug\ZedGraph.xml
+D:\Projects\mikeAIG2\bin\Debug\Unme.Common.dll
+D:\Projects\mikeAIG2\bin\Debug\LuaInterface.dll
+D:\Projects\mikeAIG2\bin\Debug\lua51.dll
+D:\Projects\mikeAIG2\obj\x86\Debug\LGAR.formSettings.resources
+D:\Projects\mikeAIG2\obj\x86\Debug\LGAR.formBulbulator.resources
+X:\aig2\src\bin\Debug\mikeAIG2.exe.config
+X:\aig2\src\obj\x86\Debug\mikeAIG2.exe
+X:\aig2\src\obj\x86\Debug\mikeAIG2.pdb
+C:\Users\pavel\Desktop\aig2\src\bin\Debug\mikeAIG2.exe.config
+C:\Users\pavel\Desktop\aig2\src\obj\x86\Debug\mikeAIG2.exe
+C:\Users\pavel\Desktop\aig2\src\obj\x86\Debug\mikeAIG2.pdb
+C:\Users\pavel\Desktop\aig2\src\bin\Debug\mikeAIG2.exe
+C:\Users\pavel\Desktop\aig2\src\bin\Debug\mikeAIG2.pdb
+C:\Users\pavel\Desktop\aig2\src\bin\Debug\LuaInterface.dll
+C:\Users\pavel\Desktop\aig2\src\bin\Debug\Modbus.dll
+C:\Users\pavel\Desktop\aig2\src\bin\Debug\ZedGraph.dll
+C:\Users\pavel\Desktop\aig2\src\bin\Debug\lua51.dll
+C:\Users\pavel\Desktop\aig2\src\bin\Debug\Unme.Common.dll
+C:\Users\pavel\Desktop\aig2\src\bin\Debug\ZedGraph.xml
+C:\Users\pavel\Desktop\aig2\src\obj\x86\Debug\mikeAIG2.csprojResolveAssemblyReference.cache
+C:\Users\pavel\Desktop\aig2\src\obj\x86\Debug\LGAR.formBulbulator.resources
+C:\Users\pavel\Desktop\aig2\src\obj\x86\Debug\LGAR.formDebugConsole.resources
+C:\Users\pavel\Desktop\aig2\src\obj\x86\Debug\LGAR.formDelay.resources
+C:\Users\pavel\Desktop\aig2\src\obj\x86\Debug\LGAR.formEthernet.resources
+C:\Users\pavel\Desktop\aig2\src\obj\x86\Debug\LGAR.formMain.resources
+C:\Users\pavel\Desktop\aig2\src\obj\x86\Debug\LGAR.formSerial.resources
+C:\Users\pavel\Desktop\aig2\src\obj\x86\Debug\LGAR.formSettings.resources
+C:\Users\pavel\Desktop\aig2\src\obj\x86\Debug\LGAR.Properties.Resources.resources
+C:\Users\pavel\Desktop\aig2\src\obj\x86\Debug\mikeAIG2.csproj.GenerateResource.Cache
+E:\Docs\Projects\aig2\src\bin\Debug\mikeAIG2.exe.config
+E:\Docs\Projects\aig2\src\obj\x86\Debug\mikeAIG2.exe
+E:\Docs\Projects\aig2\src\obj\x86\Debug\mikeAIG2.pdb
+E:\Docs\Projects\aig2\src\bin\Debug\mikeAIG2.exe
+E:\Docs\Projects\aig2\src\bin\Debug\mikeAIG2.pdb
+E:\Docs\Projects\aig2\src\bin\Debug\LuaInterface.dll
+E:\Docs\Projects\aig2\src\bin\Debug\Modbus.dll
+E:\Docs\Projects\aig2\src\bin\Debug\ZedGraph.dll
+E:\Docs\Projects\aig2\src\bin\Debug\lua51.dll
+E:\Docs\Projects\aig2\src\bin\Debug\Unme.Common.dll
+E:\Docs\Projects\aig2\src\bin\Debug\ZedGraph.xml
+E:\Docs\Projects\aig2\src\obj\x86\Debug\mikeAIG2.csprojResolveAssemblyReference.cache
+E:\Docs\Projects\aig2\src\obj\x86\Debug\LGAR.formBulbulator.resources
+E:\Docs\Projects\aig2\src\obj\x86\Debug\LGAR.formDebugConsole.resources
+E:\Docs\Projects\aig2\src\obj\x86\Debug\LGAR.formDelay.resources
+E:\Docs\Projects\aig2\src\obj\x86\Debug\LGAR.formEthernet.resources
+E:\Docs\Projects\aig2\src\obj\x86\Debug\LGAR.formMain.resources
+E:\Docs\Projects\aig2\src\obj\x86\Debug\LGAR.formSerial.resources
+E:\Docs\Projects\aig2\src\obj\x86\Debug\LGAR.formSettings.resources
+E:\Docs\Projects\aig2\src\obj\x86\Debug\LGAR.Properties.Resources.resources
+E:\Docs\Projects\aig2\src\obj\x86\Debug\mikeAIG2.csproj.GenerateResource.Cache
+C:\Users\pavel\Desktop\aig2-filter\src\bin\Debug\mikeAIG2.exe.config
+C:\Users\pavel\Desktop\aig2-filter\src\obj\x86\Debug\mikeAIG2.exe
+C:\Users\pavel\Desktop\aig2-filter\src\obj\x86\Debug\mikeAIG2.pdb
+C:\Users\pavel\Desktop\aig2-filter\src\bin\Debug\mikeAIG2.exe
+C:\Users\pavel\Desktop\aig2-filter\src\bin\Debug\mikeAIG2.pdb
+C:\Users\pavel\Desktop\aig2-filter\src\bin\Debug\LuaInterface.dll
+C:\Users\pavel\Desktop\aig2-filter\src\bin\Debug\Modbus.dll
+C:\Users\pavel\Desktop\aig2-filter\src\bin\Debug\ZedGraph.dll
+C:\Users\pavel\Desktop\aig2-filter\src\bin\Debug\lua51.dll
+C:\Users\pavel\Desktop\aig2-filter\src\bin\Debug\Unme.Common.dll
+C:\Users\pavel\Desktop\aig2-filter\src\bin\Debug\ZedGraph.xml
+C:\Users\pavel\Desktop\aig2-filter\src\obj\x86\Debug\mikeAIG2.csprojResolveAssemblyReference.cache
+C:\Users\pavel\Desktop\aig2-filter\src\obj\x86\Debug\LGAR.formBulbulator.resources
+C:\Users\pavel\Desktop\aig2-filter\src\obj\x86\Debug\LGAR.formDebugConsole.resources
+C:\Users\pavel\Desktop\aig2-filter\src\obj\x86\Debug\LGAR.formDelay.resources
+C:\Users\pavel\Desktop\aig2-filter\src\obj\x86\Debug\LGAR.formEthernet.resources
+C:\Users\pavel\Desktop\aig2-filter\src\obj\x86\Debug\LGAR.formMain.resources
+C:\Users\pavel\Desktop\aig2-filter\src\obj\x86\Debug\LGAR.formSerial.resources
+C:\Users\pavel\Desktop\aig2-filter\src\obj\x86\Debug\LGAR.formSettings.resources
+C:\Users\pavel\Desktop\aig2-filter\src\obj\x86\Debug\LGAR.Properties.Resources.resources
+C:\Users\pavel\Desktop\aig2-filter\src\obj\x86\Debug\mikeAIG2.csproj.GenerateResource.Cache
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\bin\Debug\mikeAIG2.exe.config
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\obj\x86\Debug\mikeAIG2.exe
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\obj\x86\Debug\mikeAIG2.pdb
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\bin\Debug\mikeAIG2.exe
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\bin\Debug\mikeAIG2.pdb
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\bin\Debug\LuaInterface.dll
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\bin\Debug\Modbus.dll
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\bin\Debug\ZedGraph.dll
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\bin\Debug\lua51.dll
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\bin\Debug\Unme.Common.dll
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\bin\Debug\ZedGraph.xml
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formBulbulator.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formDebugConsole.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formDelay.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formEthernet.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formMain.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formSerial.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formSettings.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.Properties.Resources.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\obj\x86\Debug\mikeAIG2.csproj.GenerateResource.Cache
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig\obj\x86\Debug\mikeAIG2.csprojResolveAssemblyReference.cache
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\mikeAIG2.exe.config
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\mikeAIG2.exe
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\mikeAIG2.pdb
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\mikeAIG2.exe
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\mikeAIG2.pdb
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\LuaInterface.dll
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\Modbus.dll
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\ZedGraph.dll
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\lua51.dll
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\Unme.Common.dll
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\ZedGraph.xml
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\mikeAIG2.csprojResolveAssemblyReference.cache
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formBulbulator.resources
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formDebugConsole.resources
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formDelay.resources
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formEthernet.resources
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formMain.resources
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formSerial.resources
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formSettings.resources
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.Properties.Resources.resources
+C:\Users\Evgenii_Mikheenko\Desktop\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\mikeAIG2.csproj.GenerateResource.Cache
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\mikeAIG2.exe.config
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\mikeAIG2.exe
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\mikeAIG2.pdb
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\mikeAIG2.exe
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\mikeAIG2.pdb
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\LuaInterface.dll
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\Modbus.dll
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\ZedGraph.dll
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\lua51.dll
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\Unme.Common.dll
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\bin\Debug\ZedGraph.xml
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\mikeAIG2.csprojResolveAssemblyReference.cache
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formBulbulator.resources
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formDebugConsole.resources
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formDelay.resources
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formEthernet.resources
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formMain.resources
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formSerial.resources
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.formSettings.resources
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\LGAR.Properties.Resources.resources
+C:\Users\Evgenii_Mikheenko\Desktop\wrk\gsa-d aig\14.03.24 - gsa7 - aig\obj\x86\Debug\mikeAIG2.csproj.GenerateResource.Cache
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\bin\Debug\mikeAIG2.exe.config
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\obj\x86\Debug\mikeAIG2.exe
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\obj\x86\Debug\mikeAIG2.pdb
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\bin\Debug\mikeAIG2.exe
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\bin\Debug\mikeAIG2.pdb
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\bin\Debug\LuaInterface.dll
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\bin\Debug\Modbus.dll
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\bin\Debug\ZedGraph.dll
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\bin\Debug\lua51.dll
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\bin\Debug\Unme.Common.dll
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\bin\Debug\ZedGraph.xml
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\obj\x86\Debug\mikeAIG2.csprojResolveAssemblyReference.cache
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formBulbulator.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formDebugConsole.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formDelay.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formEthernet.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formMain.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formSerial.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formSettings.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.Properties.Resources.resources
+D:\ГСА-7М\Пашины проекты\Пашины проекты\ВЕРХНИЕ\14.03.24 - gsa7 - aig_new\obj\x86\Debug\mikeAIG2.csproj.GenerateResource.Cache
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\mikeAIG2.exe.config
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\mikeAIG2.exe
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\mikeAIG2.pdb
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\mikeAIG2.exe
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\mikeAIG2.pdb
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\LuaInterface.dll
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\Modbus.dll
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\ZedGraph.dll
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\lua51.dll
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\Unme.Common.dll
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\ZedGraph.xml
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formBulbulator.resources
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formDebugConsole.resources
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formDelay.resources
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formEthernet.resources
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formMain.resources
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formSerial.resources
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formSettings.resources
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.Properties.Resources.resources
+C:\Users\Evgenii\Desktop\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\mikeAIG2.csproj.GenerateResource.Cache
+G:\11mobdet\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\mikeAIG2.exe.config
+G:\11mobdet\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\mikeAIG2.exe
+G:\11mobdet\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\mikeAIG2.pdb
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\mikeAIG2.exe.config
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\mikeAIG2.exe
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\mikeAIG2.pdb
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\mikeAIG2.exe
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\mikeAIG2.pdb
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\LuaInterface.dll
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\Modbus.dll
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\ZedGraph.dll
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\lua51.dll
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\Unme.Common.dll
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Debug\ZedGraph.xml
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formBulbulator.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formDebugConsole.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formDelay.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formEthernet.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formMain.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formSerial.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.formSettings.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\LGAR.Properties.Resources.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\mikeAIG2.csproj.GenerateResource.Cache
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Debug\mikeAIG2.csprojResolveAssemblyReference.cache

@@ -1,0 +1,106 @@
+Dependencies for Project 'NEW', Target 'Target 1': (DO NOT MODIFY !)
+F (..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.h)(0x55E56852)()
+F (.\startup_LPC17xx.s)(0x5605466A)(--cpu Cortex-M3 -g --apcs=interwork -I C:\Keil_v5_2\ARM\RV31\INC-I C:\Keil_v5_2\ARM\CMSIS\Include-I C:\Keil_v5_2\ARM\Inc\NXP\LPC17xx--pd "__UVISION_VERSION SETA 516"--list .\lst\startup_lpc17xx.lst --xref -o .\output\startup_lpc17xx.o --depend .\output\startup_lpc17xx.d)
+F (.\main.c)(0x561517F0)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sip_keil\lpc17xx_lib\include -I..\sip_keil\lpc17xx_lib\cmsis -I..\sip_keil\lpc17xx_lib\cmsis_boot -I..\sip_keil\v6.3_SP020105\lpc1700 -I..\sip_keil\v6.3_SP020105\pid -I..\sip_keil\MD5 -I..\sip_keil\C_lib\utils -I..\sip_keil\v6.3_SP020105\modbus -I..\sip_keil\sip_common -I..\new_project-I C:\Keil_v5_2\ARM\RV31\INC-I C:\Keil_v5_2\ARM\CMSIS\Include-I C:\Keil_v5_2\ARM\Inc\NXP\LPC17xx-D__UVISION_VERSION="516"-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.H)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h)(0x5604EB84)
+I (C:\Keil_v5_2\ARM\ARMCC\include\stdint.h)(0x55AF2E32)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h)(0x55E97C0F)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_pinsel.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\include\lpc_types.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_ssp.h)(0x55E56852)
+I (C:\Keil_v5_2\ARM\ARMCC\include\string.h)(0x55AF2E32)
+I (C:\Keil_v5_2\ARM\ARMCC\include\stdbool.h)(0x55AF2E32)
+I (C:\Keil_v5_2\ARM\ARMCC\include\stdio.h)(0x55AF2E32)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_uart.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_timer.h)(0x55E56852)
+F (.\system_LPC17xx.c)(0x55F14953)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sip_keil\lpc17xx_lib\include -I..\sip_keil\lpc17xx_lib\cmsis -I..\sip_keil\lpc17xx_lib\cmsis_boot -I..\sip_keil\v6.3_SP020105\lpc1700 -I..\sip_keil\v6.3_SP020105\pid -I..\sip_keil\MD5 -I..\sip_keil\C_lib\utils -I..\sip_keil\v6.3_SP020105\modbus -I..\sip_keil\sip_common -I..\new_project-I C:\Keil_v5_2\ARM\RV31\INC-I C:\Keil_v5_2\ARM\CMSIS\Include-I C:\Keil_v5_2\ARM\Inc\NXP\LPC17xx-D__UVISION_VERSION="516"-o .\output\system_lpc17xx.o --omf_browse .\output\system_lpc17xx.crf --depend .\output\system_lpc17xx.d)
+I (C:\Keil_v5_2\ARM\ARMCC\include\stdint.h)(0x55AF2E32)
+I (LPC17xx.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h)(0x5604EB84)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h)(0x55E56852)
+I (system_LPC17xx.h)(0x55E56852)
+F (..\sip_keil\lpc17xx_lib\source\lpc17xx_clkpwr.c)(0x55E56852)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sip_keil\lpc17xx_lib\include -I..\sip_keil\lpc17xx_lib\cmsis -I..\sip_keil\lpc17xx_lib\cmsis_boot -I..\sip_keil\v6.3_SP020105\lpc1700 -I..\sip_keil\v6.3_SP020105\pid -I..\sip_keil\MD5 -I..\sip_keil\C_lib\utils -I..\sip_keil\v6.3_SP020105\modbus -I..\sip_keil\sip_common -I..\new_project-I C:\Keil_v5_2\ARM\RV31\INC-I C:\Keil_v5_2\ARM\CMSIS\Include-I C:\Keil_v5_2\ARM\Inc\NXP\LPC17xx-D__UVISION_VERSION="516"-o .\output\lpc17xx_clkpwr.o --omf_browse .\output\lpc17xx_clkpwr.crf --depend .\output\lpc17xx_clkpwr.d)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_clkpwr.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\lpc17xx.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h)(0x5604EB84)
+I (C:\Keil_v5_2\ARM\ARMCC\include\stdint.h)(0x55AF2E32)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h)(0x55E97C0F)
+I (..\sip_keil\lpc17xx_lib\include\lpc_types.h)(0x55E56852)
+F (..\sip_keil\lpc17xx_lib\source\lpc17xx_uart.c)(0x56120487)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sip_keil\lpc17xx_lib\include -I..\sip_keil\lpc17xx_lib\cmsis -I..\sip_keil\lpc17xx_lib\cmsis_boot -I..\sip_keil\v6.3_SP020105\lpc1700 -I..\sip_keil\v6.3_SP020105\pid -I..\sip_keil\MD5 -I..\sip_keil\C_lib\utils -I..\sip_keil\v6.3_SP020105\modbus -I..\sip_keil\sip_common -I..\new_project-I C:\Keil_v5_2\ARM\RV31\INC-I C:\Keil_v5_2\ARM\CMSIS\Include-I C:\Keil_v5_2\ARM\Inc\NXP\LPC17xx-D__UVISION_VERSION="516"-o .\output\lpc17xx_uart.o --omf_browse .\output\lpc17xx_uart.crf --depend .\output\lpc17xx_uart.d)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_uart.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h)(0x5604EB84)
+I (C:\Keil_v5_2\ARM\ARMCC\include\stdint.h)(0x55AF2E32)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h)(0x55E97C0F)
+I (..\sip_keil\lpc17xx_lib\include\lpc_types.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_clkpwr.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_libcfg_default.h)(0x55E56852)
+F (..\sip_keil\lpc17xx_lib\source\lpc17xx_libcfg_default.c)(0x560A2CFA)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sip_keil\lpc17xx_lib\include -I..\sip_keil\lpc17xx_lib\cmsis -I..\sip_keil\lpc17xx_lib\cmsis_boot -I..\sip_keil\v6.3_SP020105\lpc1700 -I..\sip_keil\v6.3_SP020105\pid -I..\sip_keil\MD5 -I..\sip_keil\C_lib\utils -I..\sip_keil\v6.3_SP020105\modbus -I..\sip_keil\sip_common -I..\new_project-I C:\Keil_v5_2\ARM\RV31\INC-I C:\Keil_v5_2\ARM\CMSIS\Include-I C:\Keil_v5_2\ARM\Inc\NXP\LPC17xx-D__UVISION_VERSION="516"-o .\output\lpc17xx_libcfg_default.o --omf_browse .\output\lpc17xx_libcfg_default.crf --depend .\output\lpc17xx_libcfg_default.d)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_libcfg_default.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\include\lpc_types.h)(0x55E56852)
+I (C:\Keil_v5_2\ARM\ARMCC\include\stdint.h)(0x55AF2E32)
+F (..\sip_keil\lpc17xx_lib\source\lpc17xx_ssp.c)(0x56122343)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sip_keil\lpc17xx_lib\include -I..\sip_keil\lpc17xx_lib\cmsis -I..\sip_keil\lpc17xx_lib\cmsis_boot -I..\sip_keil\v6.3_SP020105\lpc1700 -I..\sip_keil\v6.3_SP020105\pid -I..\sip_keil\MD5 -I..\sip_keil\C_lib\utils -I..\sip_keil\v6.3_SP020105\modbus -I..\sip_keil\sip_common -I..\new_project-I C:\Keil_v5_2\ARM\RV31\INC-I C:\Keil_v5_2\ARM\CMSIS\Include-I C:\Keil_v5_2\ARM\Inc\NXP\LPC17xx-D__UVISION_VERSION="516"-o .\output\lpc17xx_ssp.o --omf_browse .\output\lpc17xx_ssp.crf --depend .\output\lpc17xx_ssp.d)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_ssp.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h)(0x5604EB84)
+I (C:\Keil_v5_2\ARM\ARMCC\include\stdint.h)(0x55AF2E32)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h)(0x55E97C0F)
+I (..\sip_keil\lpc17xx_lib\include\lpc_types.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_clkpwr.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_libcfg_default.h)(0x55E56852)
+F (..\sip_keil\lpc17xx_lib\include\lpc17xx_uart.h)(0x55E56852)()
+F (..\sip_keil\lpc17xx_lib\include\lpc17xx_adc.h)(0x55E56852)()
+F (..\sip_keil\lpc17xx_lib\source\lpc17xx_adc.c)(0x55E56852)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sip_keil\lpc17xx_lib\include -I..\sip_keil\lpc17xx_lib\cmsis -I..\sip_keil\lpc17xx_lib\cmsis_boot -I..\sip_keil\v6.3_SP020105\lpc1700 -I..\sip_keil\v6.3_SP020105\pid -I..\sip_keil\MD5 -I..\sip_keil\C_lib\utils -I..\sip_keil\v6.3_SP020105\modbus -I..\sip_keil\sip_common -I..\new_project-I C:\Keil_v5_2\ARM\RV31\INC-I C:\Keil_v5_2\ARM\CMSIS\Include-I C:\Keil_v5_2\ARM\Inc\NXP\LPC17xx-D__UVISION_VERSION="516"-o .\output\lpc17xx_adc.o --omf_browse .\output\lpc17xx_adc.crf --depend .\output\lpc17xx_adc.d)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_adc.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h)(0x5604EB84)
+I (C:\Keil_v5_2\ARM\ARMCC\include\stdint.h)(0x55AF2E32)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h)(0x55E97C0F)
+I (..\sip_keil\lpc17xx_lib\include\lpc_types.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_clkpwr.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_libcfg_default.h)(0x55E56852)
+F (..\sip_keil\lpc17xx_lib\include\lpc17xx_systick.h)(0x55E56852)()
+F (..\sip_keil\lpc17xx_lib\source\lpc17xx_systick.c)(0x5604E366)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sip_keil\lpc17xx_lib\include -I..\sip_keil\lpc17xx_lib\cmsis -I..\sip_keil\lpc17xx_lib\cmsis_boot -I..\sip_keil\v6.3_SP020105\lpc1700 -I..\sip_keil\v6.3_SP020105\pid -I..\sip_keil\MD5 -I..\sip_keil\C_lib\utils -I..\sip_keil\v6.3_SP020105\modbus -I..\sip_keil\sip_common -I..\new_project-I C:\Keil_v5_2\ARM\RV31\INC-I C:\Keil_v5_2\ARM\CMSIS\Include-I C:\Keil_v5_2\ARM\Inc\NXP\LPC17xx-D__UVISION_VERSION="516"-o .\output\lpc17xx_systick.o --omf_browse .\output\lpc17xx_systick.crf --depend .\output\lpc17xx_systick.d)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_systick.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h)(0x5604EB84)
+I (C:\Keil_v5_2\ARM\ARMCC\include\stdint.h)(0x55AF2E32)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h)(0x55E97C0F)
+I (..\sip_keil\lpc17xx_lib\include\lpc_types.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_clkpwr.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_libcfg_default.h)(0x55E56852)
+F (..\sip_keil\lpc17xx_lib\include\lpc17xx_pinsel.h)(0x55E56852)()
+F (..\sip_keil\lpc17xx_lib\include\lpc17xx_gpio.h)(0x55E56852)()
+F (..\sip_keil\lpc17xx_lib\source\lpc17xx_gpio.c)(0x55E56852)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sip_keil\lpc17xx_lib\include -I..\sip_keil\lpc17xx_lib\cmsis -I..\sip_keil\lpc17xx_lib\cmsis_boot -I..\sip_keil\v6.3_SP020105\lpc1700 -I..\sip_keil\v6.3_SP020105\pid -I..\sip_keil\MD5 -I..\sip_keil\C_lib\utils -I..\sip_keil\v6.3_SP020105\modbus -I..\sip_keil\sip_common -I..\new_project-I C:\Keil_v5_2\ARM\RV31\INC-I C:\Keil_v5_2\ARM\CMSIS\Include-I C:\Keil_v5_2\ARM\Inc\NXP\LPC17xx-D__UVISION_VERSION="516"-o .\output\lpc17xx_gpio.o --omf_browse .\output\lpc17xx_gpio.crf --depend .\output\lpc17xx_gpio.d)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_gpio.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h)(0x5604EB84)
+I (C:\Keil_v5_2\ARM\ARMCC\include\stdint.h)(0x55AF2E32)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h)(0x55E97C0F)
+I (..\sip_keil\lpc17xx_lib\include\lpc_types.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_libcfg_default.h)(0x55E56852)
+F (..\sip_keil\lpc17xx_lib\source\lpc17xx_pinsel.c)(0x55E56852)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\sip_keil\lpc17xx_lib\include -I..\sip_keil\lpc17xx_lib\cmsis -I..\sip_keil\lpc17xx_lib\cmsis_boot -I..\sip_keil\v6.3_SP020105\lpc1700 -I..\sip_keil\v6.3_SP020105\pid -I..\sip_keil\MD5 -I..\sip_keil\C_lib\utils -I..\sip_keil\v6.3_SP020105\modbus -I..\sip_keil\sip_common -I..\new_project-I C:\Keil_v5_2\ARM\RV31\INC-I C:\Keil_v5_2\ARM\CMSIS\Include-I C:\Keil_v5_2\ARM\Inc\NXP\LPC17xx-D__UVISION_VERSION="516"-o .\output\lpc17xx_pinsel.o --omf_browse .\output\lpc17xx_pinsel.crf --depend .\output\lpc17xx_pinsel.d)
+I (..\sip_keil\lpc17xx_lib\include\lpc17xx_pinsel.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\lpc17xx.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h)(0x5604EB84)
+I (C:\Keil_v5_2\ARM\ARMCC\include\stdint.h)(0x55AF2E32)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h)(0x55E56852)
+I (..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h)(0x55E97C0F)
+I (..\sip_keil\lpc17xx_lib\include\lpc_types.h)(0x55E56852)

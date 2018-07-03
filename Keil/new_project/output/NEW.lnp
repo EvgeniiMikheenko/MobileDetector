@@ -1,0 +1,16 @@
+--cpu Cortex-M3
+".\output\startup_lpc17xx.o"
+".\output\main.o"
+".\output\system_lpc17xx.o"
+".\output\lpc17xx_clkpwr.o"
+".\output\lpc17xx_uart.o"
+".\output\lpc17xx_libcfg_default.o"
+".\output\lpc17xx_ssp.o"
+".\output\lpc17xx_adc.o"
+".\output\lpc17xx_systick.o"
+".\output\lpc17xx_gpio.o"
+".\output\lpc17xx_pinsel.o"
+--strict --scatter ".\output\NEW.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\lst\NEW.map" -o .\output\NEW.axf

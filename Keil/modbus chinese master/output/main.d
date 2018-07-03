@@ -1,0 +1,14 @@
+.\output\main.o: main.c
+.\output\main.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdlib.h
+.\output\main.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\string.h
+.\output\main.o: .\FreeModbus\port\port.h
+.\output\main.o: .\FreeModbus\modbus\include\mbconfig.h
+.\output\main.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\assert.h
+.\output\main.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\inttypes.h
+.\output\main.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\output\main.o: .\FreeModbus\modbus\include\mb.h
+.\output\main.o: .\FreeModbus\modbus\include\mbport.h
+.\output\main.o: .\FreeModbus\modbus\include\mbproto.h
+.\output\main.o: .\FreeModbus\modbus\ascii\mbascii.h
+.\output\main.o: .\FreeModbus\modbus\include\mbframe.h
+.\output\main.o: .\FreeModbus\modbus\rtu\mbcrc.h

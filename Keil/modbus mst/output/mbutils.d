@@ -1,0 +1,14 @@
+.\output\mbutils.o: freemodbus\modbus\functions\mbutils.c
+.\output\mbutils.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdlib.h
+.\output\mbutils.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\string.h
+.\output\mbutils.o: .\freemodbus\lpc1768\port\port.h
+.\output\mbutils.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\assert.h
+.\output\mbutils.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.H
+.\output\mbutils.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h
+.\output\mbutils.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\output\mbutils.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h
+.\output\mbutils.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h
+.\output\mbutils.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h
+.\output\mbutils.o: .\freemodbus\modbus\include\mb.h
+.\output\mbutils.o: .\freemodbus\modbus\include\mbport.h
+.\output\mbutils.o: .\freemodbus\modbus\include\mbproto.h

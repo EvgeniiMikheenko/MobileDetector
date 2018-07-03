@@ -1,0 +1,10 @@
+.\output\porttimer_m.o: FreeModbus\port\rtt\porttimer_m.c
+.\output\porttimer_m.o: .\FreeModbus\port\port.h
+.\output\porttimer_m.o: .\FreeModbus\modbus\include\mbconfig.h
+.\output\porttimer_m.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\assert.h
+.\output\porttimer_m.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\inttypes.h
+.\output\porttimer_m.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\output\porttimer_m.o: .\FreeModbus\modbus\include\mb.h
+.\output\porttimer_m.o: .\FreeModbus\modbus\include\mbport.h
+.\output\porttimer_m.o: .\FreeModbus\modbus\include\mbproto.h
+.\output\porttimer_m.o: .\FreeModbus\modbus\include\mb_m.h

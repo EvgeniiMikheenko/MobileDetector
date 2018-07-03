@@ -1,0 +1,42 @@
+D:\Projects\mikeAIG2\bin\Release\mikeAIG2.exe.config
+D:\Projects\mikeAIG2\bin\Release\mikeAIG2.exe
+D:\Projects\mikeAIG2\bin\Release\mikeAIG2.pdb
+D:\Projects\mikeAIG2\bin\Release\Modbus.dll
+D:\Projects\mikeAIG2\bin\Release\ZedGraph.dll
+D:\Projects\mikeAIG2\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Projects\mikeAIG2\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Projects\mikeAIG2\obj\x86\Release\GenerateResource.write.1.tlog
+D:\Projects\mikeAIG2\obj\x86\Release\mikeAIG2.exe
+D:\Projects\mikeAIG2\obj\x86\Release\mikeAIG2.pdb
+D:\Projects\mikeAIG2\obj\x86\Release\LGAR.formDebugConsole.resources
+D:\Projects\mikeAIG2\obj\x86\Release\LGAR.formDelay.resources
+D:\Projects\mikeAIG2\obj\x86\Release\LGAR.formEthernet.resources
+D:\Projects\mikeAIG2\obj\x86\Release\LGAR.formMain.resources
+D:\Projects\mikeAIG2\obj\x86\Release\LGAR.formSerial.resources
+D:\Projects\mikeAIG2\obj\x86\Release\LGAR.Properties.Resources.resources
+D:\Projects\mikeAIG2\bin\Release\ZedGraph.xml
+D:\Projects\mikeAIG2\bin\Release\Unme.Common.dll
+D:\Projects\mikeAIG2\bin\Release\LuaInterface.dll
+D:\Projects\mikeAIG2\bin\Release\lua51.dll
+D:\Projects\mikeAIG2\obj\x86\Release\LGAR.formSettings.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Release\mikeAIG2.exe.config
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Release\mikeAIG2.exe
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Release\mikeAIG2.pdb
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Release\mikeAIG2.exe
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Release\mikeAIG2.pdb
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Release\LuaInterface.dll
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Release\Modbus.dll
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Release\ZedGraph.dll
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Release\lua51.dll
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Release\Unme.Common.dll
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\bin\Release\ZedGraph.xml
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Release\mikeAIG2.csprojResolveAssemblyReference.cache
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Release\LGAR.formBulbulator.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Release\LGAR.formDebugConsole.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Release\LGAR.formDelay.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Release\LGAR.formEthernet.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Release\LGAR.formMain.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Release\LGAR.formSerial.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Release\LGAR.formSettings.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Release\LGAR.Properties.Resources.resources
+D:\work\Keil\mobiledetector\mobdet\14.03.24 - gsa7 - aig_new\obj\x86\Release\mikeAIG2.csproj.GenerateResource.Cache

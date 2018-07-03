@@ -1,0 +1,11 @@
+D:\work\VS13\Fish\StartForm\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+D:\work\VS13\Fish\StartForm\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+D:\work\VS13\Fish\StartForm\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\work\VS13\Fish\StartForm\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+D:\work\VS13\Fish\StartForm\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\work\VS13\Fish\StartForm\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\work\VS13\Fish\StartForm\WindowsFormsApplication1\bin\Debug\NModbus4.dll
+D:\work\VS13\Fish\StartForm\WindowsFormsApplication1\bin\Debug\ZedGraph.dll
+D:\work\VS13\Fish\StartForm\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.COM_settings.resources
+D:\work\VS13\Fish\StartForm\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\work\VS13\Fish\StartForm\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

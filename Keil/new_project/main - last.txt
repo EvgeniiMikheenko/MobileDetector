@@ -1,0 +1,765 @@
+#include <LPC17xx.H>
+#include <system_LPC17xx.h>
+#include <lpc17xx_pinsel.h>
+//#include <lpc17xx_gpio.h>
+//#include <lpc17xx_systick.h>
+//#include <lpc17xx_uart.h> 
+#include <lpc17xx_ssp.h>
+//#include <lpc17xx_pwm.h>
+//#include <stdbool.h>
+//#include <stdlib.h>
+//#include <stdint.h>
+//#include <LPC17xx_timer.h>
+#include <string.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <lpc17xx_uart.h>
+
+
+#define DISPLAY_DATA			0xFA00
+#define DISPLAY_CMD				0xF800
+#define DISPLAY_ROWS_COUNT		2
+#define DISPLAY_ROW_LEN			40
+
+#define DISPROW1_HDR			"Read ADC:"
+
+static uint16_t m_DispRows[DISPLAY_ROWS_COUNT][DISPLAY_ROW_LEN];
+
+void delay(uint32_t count);
+uint8_t select_channel_adc(uint8_t channel);
+#include <LPC17xx.H>
+#include <system_LPC17xx.h>
+#include <lpc17xx_pinsel.h>
+//#include <lpc17xx_gpio.h>
+//#include <lpc17xx_systick.h>
+//#include <lpc17xx_uart.h>
+#include <lpc17xx_ssp.h>
+//#include <lpc17xx_pwm.h>
+//#include <stdbool.h>
+//#include <stdlib.h>
+//#include <stdint.h>
+//#include <LPC17xx_timer.h>
+#include <string.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <lpc17xx_timer.h>
+
+
+
+#define DISPLAY_DATA			0xFA00
+#define DISPLAY_CMD				0xF800
+#define DISPLAY_ROWS_COUNT		2
+#define DISPLAY_ROW_LEN			40
+#define clear	   			0xF801
+#define home				0xF802
+#define disp_Success		0xFA53
+#define disp_Fail			0xFA46
+#define ADC_CS_ON			LPC_GPIO0 -> FIOCLR = (1 << 2);
+#define ADC_CS_OFF			LPC_GPIO0 -> FIOSET = (1 << 2);	
+#define DISP_CS_ON			LPC_GPIO0 -> FIOCLR = (1 << 3);
+#define DISP_CS_OFF			LPC_GPIO0 -> FIOSET = (1 << 3);
+
+#define ENABLE_DISPLAY
+
+
+
+#define RE_ENABLE				LPC_GPIO0 -> FIOCLR |= (1 << 18);
+#define RE_DISABLE			LPC_GPIO0 -> FIOSET |= (1 << 18);
+#define DE_ENABLE				LPC_GPIO0 -> FIOSET |= (1 << 17);
+#define DE_DISABLE			LPC_GPIO0 -> FIOCLR |= (1 << 17);
+
+static uint16_t m_DispRows[DISPLAY_ROWS_COUNT][DISPLAY_ROW_LEN];
+
+void delay(uint32_t count);
+void adc_read(void );
+uint8_t selectchannel(char chsel);
+void disp_show(char* lpStr, int strLen, int strNum, int column, bool isFullRow);
+void disp_update( void );
+float temperature;
+uint16_t receivedata[20];
+	SSP_CFG_Type SSPCFG;
+uint16_t testdata[20];
+
+uint8_t l = 0;
+volatile uint8_t flag1 = 0x1;
+uint8_t flag2 = 0;
+int j=0;
+//uint8_t flag2=1;
+uint8_t chnum = 6;
+
+uint8_t del[20];
+uint8_t receivedata_first[20];
+uint8_t receivedata_second[20];
+uint8_t receivedata_third[20];
+uint16_t data16[20];
+
+////uint16_t receive_first[20];
+////uint8_t receive_second[20];
+
+int cint = 0;
+
+uint8_t disp_adc = 1;
+uint8_t read=0;
+uint8_t k=0;
+int tmp;
+
+
+
+
+
+typedef struct {
+	
+	uint16_t state16_1;
+	uint16_t state16_2;
+	uint16_t state8_1;
+	uint16_t state8_2;
+
+} CR0_STR_TYPE;
+
+
+CR0_STR_TYPE cr0_cfg;
+
+
+uint8_t count = 0;
+char	uartrc[20];
+
+UART_CFG_Type UARTCFG;
+void __enable_irq(void);
+void UART1CMD(void);
+
+int main (){
+	
+
+	
+	
+	memset( m_DispRows[0], 0, DISPLAY_ROW_LEN );
+	memset( m_DispRows[1], 0, DISPLAY_ROW_LEN );
+		
+	LPC_SC -> PCONP |= ( 1 << 10 );
+//	LPC_SC->PCONP |= 1 << 1;		// timer0
+	LPC_PINCON -> PINSEL0 = 0xA8000;    
+
+	LPC_GPIO0 -> FIODIR |= (1 << 3)|(1 << 2);
+	
+//	LPC_SC->PCLKSEL0 |= 1 << 2;		//timer0
+
+
+	
+	
+	ADC_CS_OFF;
+	DISP_CS_OFF;
+	delay(10000);
+	
+	
+	SSPCFG.Databit = SSP_DATABIT_8;
+	SSPCFG.CPHA = SSP_CPHA_SECOND;
+	SSPCFG.CPOL = SSP_CPOL_HI;
+	SSPCFG.Mode = SSP_MASTER_MODE;
+	SSPCFG.FrameFormat = SSP_FRAME_SPI;
+	SSPCFG.ClockRate = 100000;
+
+	SSP_Init(LPC_SSP1, &SSPCFG);
+	cr0_cfg.state8_2  = LPC_SSP1 -> CR0;
+	
+	
+	
+	
+	SSPCFG.Databit = SSP_DATABIT_8;
+	SSPCFG.CPHA = SSP_CPHA_FIRST;
+	SSPCFG.CPOL = SSP_CPOL_HI;
+	SSPCFG.Mode = SSP_MASTER_MODE;
+	SSPCFG.FrameFormat = SSP_FRAME_SPI;
+	SSPCFG.ClockRate = 100000;
+	
+	
+	SSP_Init(LPC_SSP1, &SSPCFG);
+	cr0_cfg.state8_1  = LPC_SSP1 -> CR0;
+
+
+	SSPCFG.Databit = SSP_DATABIT_16;
+	SSPCFG.CPHA = SSP_CPHA_SECOND;
+	SSPCFG.CPOL = SSP_CPOL_HI;
+	SSPCFG.Mode = SSP_MASTER_MODE;
+	SSPCFG.FrameFormat = SSP_FRAME_SPI;
+	SSPCFG.ClockRate = 100000;
+	
+	
+	
+	SSP_Init(LPC_SSP1, &SSPCFG);
+	
+	cr0_cfg.state16_2  = LPC_SSP1 -> CR0;
+
+
+	
+	SSPCFG.Databit = SSP_DATABIT_16;
+	SSPCFG.CPHA = SSP_CPHA_FIRST;
+	SSPCFG.CPOL = SSP_CPOL_HI;
+	SSPCFG.Mode = SSP_MASTER_MODE;
+	SSPCFG.FrameFormat = SSP_FRAME_SPI;
+	SSPCFG.ClockRate = 100000;
+	
+	
+	
+	SSP_Init(LPC_SSP1, &SSPCFG);
+	
+	cr0_cfg.state16_1  = LPC_SSP1 -> CR0;
+	
+	
+	
+
+	SSP_Cmd(LPC_SSP1, ENABLE);
+	
+	
+#ifdef ENABLE_DISPLAY	
+	
+	ADC_CS_OFF
+	delay(100);
+	DISP_CS_ON
+	
+	
+	delay(100);
+	SSP_SendData(LPC_SSP1, 0xF80C);		//Disp On
+	delay(100);	
+	
+	
+	SSP_SendData(LPC_SSP1, 0xF828);		//Func_set
+	delay(100);
+	
+	SSP_SendData(LPC_SSP1, clear);
+	delay(100);
+	
+	
+	SSP_SendData(LPC_SSP1, home);
+	delay(10000);
+	
+		
+		
+#endif // ENABLE_DISPLAY
+
+	
+		
+//	TIM_TIMERCFG_Type TIMCFG;
+//	
+//	TIMCFG.PrescaleOption = TIM_PRESCALE_TICKVAL;
+//	TIMCFG.PrescaleValue = 60; 	// 6E-5s
+//	
+//	
+//	
+//	
+//	
+//	TIM_Init( LPC_TIM0, TIM_COUNTER_FALLING_MODE, &TIMCFG);
+//	
+//	
+//	TIM_Cmd(LPC_TIM0, ENABLE);
+//	
+	
+	UART1CMD();
+	DE_DISABLE
+	RE_ENABLE
+	
+	
+	
+	
+	SysTick_Config(SystemCoreClock / 1000);
+
+  while(1){
+	//DISP_CS_OFF
+	//ADC_CS_ON
+
+	if(flag1 != 0){
+	
+		adc_read();
+	};
+
+#ifdef ENABLE_DISPLAY	
+	delay(1000);
+	//DISP_CS_ON
+	//ADC_CS_OFF
+	disp_show(DISPROW1_HDR, 11, 0, 0, false);
+	disp_update();
+#endif // ENABLE_DISPLAY	
+
+
+		
+}
+	
+}
+
+
+void adc_read(void){
+
+		while(SSP_GetStatus(LPC_SSP1, SSP_STAT_RXFIFO_NOTEMPTY) == SET) {
+			del[k] = SSP_ReceiveData(LPC_SSP1);
+		};	
+
+//	flag1=0;
+//	flag2 = 0;
+	DISP_CS_OFF
+	delay(100);
+	ADC_CS_ON
+	
+	
+	
+	// channel5 = 6
+	// channel6 = 3
+	
+	
+		
+	uint8_t channel = chnum;
+	uint8_t startbyte =	0x87 + (channel << 4);	
+	
+	  
+	  
+	LPC_SSP1 -> CR0 = cr0_cfg.state8_2; 		//8 bit  CPHA=1
+	
+//	SSP_DeInit(LPC_SSP1);
+
+//	SSPCFG.Databit = SSP_DATABIT_8;		
+//	SSPCFG.CPHA = SSP_CPHA_FIRST;
+//	SSPCFG.CPOL = SSP_CPOL_HI;
+//	SSPCFG.Mode = SSP_MASTER_MODE;
+//	SSPCFG.FrameFormat = SSP_FRAME_SPI;
+//	SSPCFG.ClockRate = 50000;
+//	
+//	
+//	
+//	
+//	
+//	SSP_Init(LPC_SSP1, &SSPCFG);
+//	SSP_Cmd(LPC_SSP1, ENABLE);
+//	
+	
+//	del = SSP_ReceiveData(LPC_SSP1);
+
+	
+	
+	
+	SSP_SendData(LPC_SSP1, startbyte);
+	
+	delay(1000);
+	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_BUSY) == SET) {}	
+	
+	del[k] = SSP_ReceiveData(LPC_SSP1);
+		
+		
+	//delay(1000);	
+//	LPC_SSP1 -> CR0 = cr0_cfg.state8_2;
+	
+
+	//delay(100);
+		
+		
+	LPC_SSP1 -> CR0 = cr0_cfg.state8_2;	
+	delay(100);	
+	//LPC_SSP1 -> CR0 += 0x87;
+	SSP_SendData(LPC_SSP1, 0x00);
+	//delay(100);
+	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_BUSY) == SET) {}		
+
+	receivedata_first[k] = SSP_ReceiveData(LPC_SSP1);
+
+		
+		
+	SSP_SendData(LPC_SSP1, 0x00);
+	//delay(100);
+	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_BUSY) == SET) {}	
+	receivedata_second[k] = SSP_ReceiveData(LPC_SSP1);
+		
+
+		
+		
+	SSP_SendData(LPC_SSP1, 0x00);
+	//delay(100);
+	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_BUSY) == SET) {}	//	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_BUSY) == SET) {}	
+	receivedata_third[k] = SSP_ReceiveData(LPC_SSP1);
+	
+
+	delay(100);
+		
+////	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_BUSY) == SET) {del[k] = SSP_ReceiveData(LPC_SSP1);};
+////	del[k] = SSP_ReceiveData(LPC_SSP1);	
+////		
+////	LPC_SSP1 -> CR0 = cr0_cfg.state16_2;
+////	delay(100);
+////	SSP_SendData(LPC_SSP1, 0x00);
+////	//delay(100);
+////	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_BUSY) == SET) {}		
+////	
+////	data16[k] = SSP_ReceiveData(LPC_SSP1); // - 0x4000;
+////	
+
+////		
+////		
+////		
+////	LPC_SSP1 -> CR0 = cr0_cfg.state8_2;
+////	delay(100);
+////	SSP_SendData(LPC_SSP1, 0x00);
+////	//delay(100);
+////	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_BUSY) == SET) {}		
+
+////	receivedata_first[k] = SSP_ReceiveData(LPC_SSP1);
+////			
+////	
+////		
+////		
+////	receivedata[k]	= ((uint16_t)data16[k] << 1) + ((uint16_t)receivedata_first[k] >> 7);
+	
+	receivedata[k] = ((((uint16_t)receivedata_first [k]) << 9) + (((uint16_t)receivedata_second [k]) << 1) + ( (((uint16_t)receivedata_third [k]) >> 7)))-0x8000;
+	//testdata[k] = (((uint16_t)del [k]) << 9) + (((uint16_t)receivedata_first [k]) << 1) + ( 0x0001 & (((uint16_t)receivedata_second [k]) >> 7));
+	
+	
+	////delay(100);
+	//ADC_CS_OFF;	
+//////	LPC_SSP1 -> CR0 |= 0xF; 		
+//////	
+//////	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_TXFIFO_EMPTY) == RESET) {}
+//////	SSP_SendData(LPC_SSP1, 0x00);
+//////	
+//////	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_TXFIFO_EMPTY) == RESET) {}
+//////	receive_first[k] = SSP_ReceiveData(LPC_SSP1) ;	
+//////		
+//////	
+
+//////	delay(100);
+//////	LPC_SSP1 -> CR0 |= 0x7;
+//////	SSP_SendData(LPC_SSP1, 0x00);
+//////	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_TXFIFO_EMPTY) == RESET) {}
+//////	receive_second[k] = SSP_ReceiveData(LPC_SSP1) ;		
+//////		
+//////		
+//////	receivedata[k] = ((uint16_t)receive_first[k] << 1) + ((uint16_t)receive_second[k] >> 7);	
+	//delay(100);
+		
+	float u_val;
+	float u_ref = 2.5;
+	u_val = ((float)receivedata[12] * u_ref*2)/(1 << 16);
+	
+		
+		char tBuf[12];
+	memset( tBuf, 0, 12 );
+	int len = sprintf(tBuf, "%04f", u_val);
+	tBuf[len] = '\0';
+	//disp_show( "  ", 1, 1, 0, false);
+	
+
+	disp_show( tBuf, 17, 0, 11, true);
+	disp_show(" V",19,0,17,true);
+	//delay(1000);
+//	disp_show ("test", 14, 0, 10, false);
+//	disp_show ("test1", 5, 1, 0, false);
+	
+	
+	float R1=1000;
+	
+	float Rt= (  R1 * u_val )/( u_ref - u_val);
+	
+	
+//	float R2= 3300/2;
+//	float Rt= ( R2*u_ref - R1*u_val )/( u_val - u_ref );
+	
+	
+	
+	
+	float A = 3.81E-3;
+	
+	float R0=1000;
+	temperature = (Rt - R0)/ (A*R0);
+	memset( tBuf, ' ', 12 );
+	len = sprintf(tBuf, "%02f", temperature);
+	
+	
+	
+	
+	for(int i=0; i<6; i++){
+	disp_show(" ",1+i,1,i,false);
+	};
+	
+	disp_show( tBuf, 11, 1, 6, false);
+	
+	disp_show(  " C", 13,1,11,false);	
+		
+	
+	
+	k > 19 ? k=0 : k++;
+	ADC_CS_OFF
+	delay(100);
+	
+	
+	
+//	for(int j =0; j < 81; j++){
+//	disp_update();
+//	delay(10000);
+//	};
+	flag1=0;
+//	flag2=1;
+	cint++;
+	///return;
+};
+
+
+void delay(uint32_t count) {
+	volatile uint32_t tmp = count;
+	while((--tmp) != 0) {
+	};
+}
+
+void disp_show(char* lpStr, int strLen, int strNum, int column, bool isFullRow) {
+	
+	
+	
+	if((lpStr == (char*)NULL) || (strNum >= 2) || (strLen <= 0))
+		return;
+	
+	for(int i = column  ; i < DISPLAY_ROW_LEN; i++) {
+		if(i < strLen) {
+			m_DispRows[strNum][i] = DISPLAY_DATA | (*lpStr);
+			lpStr++;
+		}
+		else if(isFullRow){
+			m_DispRows[strNum][i] = DISPLAY_DATA | ' ';
+		}
+		
+	}
+}
+
+
+
+void disp_update( void ){
+	
+	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_BUSY) == SET) {
+			
+		};	
+	
+	LPC_SSP1 -> CR0 = cr0_cfg.state16_1;
+	
+//	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_TXFIFO_EMPTY) == RESET) {}
+//	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_BUSY) == SET) {};
+	delay(100);
+	ADC_CS_OFF;	
+	DISP_CS_ON;
+	delay(1000);
+	static int row = 0;
+	static int col = 0;
+	
+	SSP_SendData(LPC_SSP1, m_DispRows[row][col]);
+	
+	col++;
+
+	if(col >= DISPLAY_ROW_LEN) {
+		col = 0;
+		row++;
+		if(row >= DISPLAY_ROWS_COUNT) {
+			row = 0;
+			SSP_SendData(LPC_SSP1, home);	
+		}
+	}
+	
+	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_BUSY) == SET) {}
+	
+	DISP_CS_OFF;
+//	while(SSP_GetStatus(LPC_SSP1, SSP_STAT_TXFIFO_EMPTY) == RESET) {}
+};
+
+
+
+void SysTick_Handler(void) {
+	
+
+	
+	if (flag1 == 0){
+		l++;
+			if(l > 50){
+				flag1++;
+				l=0;
+			};
+		};
+		
+		
+		if ((j == 99) & (flag2 == 1) )
+		{
+			DE_ENABLE;
+			RE_DISABLE;
+			delay(100);
+			uint8_t *ptr = (uint8_t*)&temperature;
+			UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, *ptr++);
+			UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, *ptr++);
+			UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, *ptr++);
+			UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, *ptr);
+			
+			delay(10000);
+			j=0;
+			RE_ENABLE;
+			DE_DISABLE;
+		};
+		j > 99 ? j = 0 : j++;
+
+};
+
+
+
+
+
+void UART1CMD(void){
+	LPC_SC -> PCONP |= (1 << 4);
+	LPC_SC -> PCLKSEL0 |= (1 << 8);
+	
+	
+	
+	
+	LPC_PINCON -> PINSEL0 |= (1 << 30);
+	LPC_PINCON -> PINSEL1 |= 1;
+	LPC_GPIO0 -> FIODIR |= (1 << 17) | (1 << 18);
+	LPC_GPIO0 -> FIODIR |= (1 << 15);
+	LPC_PINCON -> PINSEL0 |= 0xA8000;    
+
+	LPC_GPIO0 -> FIODIR |= (1 << 3)|(1 << 2);
+	
+		UART_ConfigStructInit(&UARTCFG);
+	
+	
+	UARTCFG.Baud_rate = 115200;
+	UART_Init((LPC_UART_TypeDef*)LPC_UART1, &UARTCFG);
+	UART_TxCmd((LPC_UART_TypeDef*)LPC_UART1, ENABLE);
+	NVIC_EnableIRQ(UART1_IRQn);
+	UART_IntConfig((LPC_UART_TypeDef*)LPC_UART1,UART_INTCFG_RBR, ENABLE);
+	
+	UART_FIFO_CFG_Type FIFOCFG;
+	
+	FIFOCFG.FIFO_DMAMode = DISABLE;
+	FIFOCFG.FIFO_Level = UART_FIFO_TRGLEV1;
+	FIFOCFG.FIFO_ResetRxBuf = DISABLE;
+	FIFOCFG.FIFO_ResetTxBuf = DISABLE;
+	
+	UART_FIFOConfig((LPC_UART_TypeDef*)LPC_UART1, &FIFOCFG);
+	
+};
+
+
+
+//uint8_t tr1[20];
+//uint8_t tr2[20];
+//uint8_t tr3[20];
+//uint16_t tr4[20];
+
+void	UART1_IRQHandler(void){
+	
+
+		uartrc[count] = UART_ReceiveByte((LPC_UART_TypeDef*)LPC_UART1);
+	
+		if ((LPC_UART1 -> IIR & 0x6) == 0x6){
+			return;
+		};
+		
+	
+		
+//		disp_show("ok", 14, 0, 12, false);
+	
+//		SysTick_Config(SystemCoreClock / 100);
+	
+		delay(100);
+	
+//	  DE_ENABLE;
+//		RE_DISABLE;
+		
+//		
+//		if (uartrc[count] == '1'){
+//			tr1[count] = (uint8_t)((receivedata[1]&0xFF00)>>8);
+//			tr3[count]=receivedata[count];
+//			UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, tr1[count]);
+//			delay(100);
+//		}
+//		else if (uartrc[count] == '2'){
+//			tr2[count] = (uint8_t)(receivedata[1]&0xFF);
+//			tr3[count]=receivedata[count];
+//			UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, tr2[count]);
+//			delay(100);
+//		}
+//		else{
+//			UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, 'h');
+//		};
+	
+
+//////		if (uartrc[count] == '1'){
+//////			
+//////////			flag2 = 1;
+//////			
+//////			
+//////			tr1[count] = receivedata_first[count];
+//////			tr4[count]=receivedata[count];
+//////			
+//////			uint8_t *ptr = (uint8_t*)&temperature;
+//////			UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, *ptr++);
+//////			UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, *ptr++);
+//////			UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, *ptr++);
+//////			UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, *ptr);
+//////			
+//////			delay(10000);
+//////}
+//////		else if (uartrc[count] == '2'){
+//////			tr2[count] = receivedata_second[count];
+//////			tr4[count]=receivedata[count];
+//////			UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, receivedata_second[count]);
+//////			delay(10000);
+//////		}
+//////		else if (uartrc[count] == '3'){
+//////			tr3[count]=receivedata_third[count];
+//////			tr4[count]=receivedata[count];
+//////			UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, receivedata_third[3]);
+//////			delay(10000);
+//////		};
+			
+		
+//		if (uartrc[count] == '8'){
+//			
+//		UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, receivedata_first[3]);
+//			
+//		delay(1000);
+//			
+//		UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, receivedata_second[3]);
+//		
+//		delay(1000);
+//			
+//		UART_SendByte((LPC_UART_TypeDef*)LPC_UART1, receivedata_third[3]);
+
+//		delay(1000);
+//		};
+//		
+	
+	
+	
+		if (uartrc[count] == '1'){
+			flag2 = 1;
+			chnum = selectchannel(uartrc[count]);
+		}
+		else if (uartrc[count] == '2'){
+			flag2 = 1;
+			chnum = selectchannel(uartrc[count]);
+		}
+		else if (uartrc[count] == '3'){
+			flag2 = 0;
+
+		};
+		delay(1000);
+		
+
+//		count == 19 ? count = 0 : count++;
+		
+	
+};
+
+
+uint8_t selectchannel(char chsel){
+	
+	if (chsel == '1'){
+		chnum=6;
+	};
+	if (chsel == '2'){
+		chnum = 3;
+	};
+	return chnum;
+	
+};
+	
+
+
+

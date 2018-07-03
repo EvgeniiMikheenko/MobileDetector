@@ -1,0 +1,291 @@
+#include <LPC17xx.H>
+#include <system_LPC17xx.h>
+//#include <lpc17xx_pinsel.h>
+//#include <lpc17xx_gpio.h>
+//#include <lpc17xx_systick.h>
+#include <lpc17xx_uart.h>
+
+#include <stdbool.h>
+#include <stdlib.h>
+#include <stdint.h>
+
+
+
+void UART3_IRQHandler( void );
+void send_hv_data(void);
+void Send_byte(unsigned int byte);
+unsigned int Receive_byte( void );	
+void usart3_init(uint32_t baudrate, uint8_t stopBits);
+
+
+int parity=1;
+unsigned int voltage_1, voltage_2;
+#define	 _UART	;
+#define _UART3	;
+
+uint8_t tmpr[4];
+
+volatile bool m_txComplete = true;
+
+#pragma pack(1)
+typedef struct{
+	uint8_t flags;
+	uint16_t voltage;
+} HvPaket_t;
+#pragma pack()
+
+HvPaket_t m_hvIn;
+HvPaket_t m_hvOut;
+
+
+int main() {
+	SystemCoreClockUpdate(); 
+	
+	
+	LPC_SC -> PCONP |= (1 << 24);
+	LPC_SC -> PCLKSEL1 |= (1 << 18) ;
+	
+	LPC_UART3 -> LCR = 0x83;
+//	LPC_UART3 -> LCR |= (1 << 7);
+//	LPC_UART3 -> FCR = 0x1;
+	
+	volatile int size = sizeof(HvPaket_t);
+	
+	// ???
+	#define UART_DIVISOR  					54 
+	LPC_UART3 -> DLL = UART_DIVISOR & 0xFF;
+	LPC_UART3 -> DLM = (UART_DIVISOR >> 8) & 0xFF;
+	//
+    LPC_UART3 -> LCR = 0x3;
+	LPC_PINCON -> PINSEL0 = 0xA;
+	LPC_PINCON -> PINMODE0 = 0x0;
+	
+	//LPC_UART3 -> TER = (1 << 7); 
+	
+	#define start 			0xCA
+	#define flag_on			0x1
+	#define flag_off 		0
+	
+	/*
+	short int voltage=4000;
+	
+
+	
+	int tmp1 = voltage & 0xFF;
+		
+	int tmp2 = voltage >> 8;
+	
+	voltage_1 = (char) tmp1;
+	voltage_2 = (char) tmp2;
+	
+	*/
+	
+	//SysTick_Config(SystemCoreClock / 5);
+	LPC_UART3->IER = 0x03;
+	
+	LPC_SC -> PCONP |= (1<<15);
+	LPC_GPIO0->FIODIR |= (1 << 26);
+	
+	usart3_init( 115200, 1 );
+	
+	__enable_irq();
+	NVIC_EnableIRQ(UART3_IRQn);	
+	
+	
+	/////////////////////////////////////////////////////////////////
+	
+	LPC_SC -> PCONP |= (1 << 8);
+    LPC_SC -> PCLKSEL0 |= (1 << 16);
+	
+	
+	
+	
+	
+	
+	
+	/////////////////////////////////////////////////////////////////
+	while(1){
+	
+		LPC_GPIO0->FIOCLR  |= (1 << 26);
+
+
+		if(m_txComplete) {
+			m_txComplete = false;
+			Send_byte(start);	
+		}
+		
+		if (m_hvIn.voltage != 0){
+			LPC_GPIO0->FIOSET  |= (1 << 26);
+		};
+		
+		for(volatile int i = 0; i < 100000; i++) {};
+	}
+
+}
+
+
+
+void Send_byte(unsigned int sendbyte)
+{
+	//while((LPC_UART3 -> LSR & 0x5)==0);
+	LPC_UART3 -> TER = (1 << 7); 
+	LPC_UART3->THR = sendbyte;
+	
+	
+}
+
+unsigned int Receive_byte( void )
+{
+	unsigned int received_byte;
+	//while((LPC_UART3 -> LSR & 0x1)==1);
+	received_byte=LPC_UART3 -> RBR;
+	return received_byte; 
+}
+
+/*
+void SysTick_Handler(void) {
+	LPC_UART3 -> TER = (1 << 7);
+	if ( parity == 1){
+		LPC_UART3 -> TER = (1 << 7);
+		Send_byte(start);
+		LPC_UART3 -> TER = (1 << 7);
+		Send_byte(flag_on);
+		LPC_UART3 -> TER = (1 << 7);
+		Send_byte(voltage_2);
+		LPC_UART3 -> TER = (1 << 7);
+		Send_byte(voltage_1);
+		LPC_UART3 -> TER = (1 << 7);
+		Send_byte(flag_off);
+	parity ^=1;
+	}
+	else{
+		
+		
+	
+	} 	
+	
+	
+}
+*/
+
+void send_hv_data(void) {
+	static int index = 0;
+	
+	if(index >= sizeof(m_hvOut)) {
+		index = 0;
+		return;
+	}
+	
+	m_hvOut.flags = 0x01;
+	m_hvOut.voltage = 4004;
+	
+	uint8_t *ptr = (uint8_t*)&m_hvOut;
+	Send_byte( ptr[index++] );
+	if(index >= (sizeof(m_hvOut)))
+		m_txComplete = true;
+}
+
+
+//void UART3_IRQHandler( void ) {
+//	
+//	if ((LPC_UART3 -> LSR & 0x20) == 0){
+//	//if ((LPC_UART3 -> IIR & 0x2) == 0x2){
+//	//LPC_UART3->IER = 0x01;
+//	
+//	send_hv_data();
+//	//LPC_UART3->IER = 0x03;	
+//		
+//	};
+//	
+//	
+//	static int index = 0;
+////	uint8_t data;
+//	
+//	
+//	
+//	if ((LPC_UART3 -> LSR & 0x1) == 1){
+//	//if ((LPC_UART3 -> IIR & 0x6) == 0x6){
+
+//	//LPC_UART3->IER = 0x02;	
+////	data =  Receive_byte();	
+//			tmpr[index]=Receive_byte();
+//			index++;
+//		}
+//		m_hvIn.flags = tmpr[1];
+//		m_hvIn.voltage = (uint16_t)((( tmpr[2] << 8 ) | tmpr[3])/13);
+//		//LPC_UART3->IER = 0x03;
+//		
+//		if (index == 4) { index = 0; };
+//	
+//}
+	
+void UART3_IRQHandler( void ) {
+	
+	uint32_t intsrc, tmp, tmp1;
+	bool isOverflow = false;
+	bool isFrameError = false;
+	uint8_t data = 0;
+	uint32_t rLen = 0;
+	static int index = 0;
+	uint8_t *ptr = (uint8_t*)&m_hvIn;
+ 
+    /* Determine the interrupt source */
+    intsrc = UART_GetIntId((LPC_UART_TypeDef*)LPC_UART3);
+    tmp = intsrc & UART_IIR_INTID_MASK;
+ 
+    // Receive Line Status
+    if (tmp == UART_IIR_INTID_RLS){
+        // Check line status
+        tmp1 = UART_GetLineStatus((LPC_UART_TypeDef*)LPC_UART3);
+        // Mask out the Receive Ready and Transmit Holding empty status
+        tmp1 &= (UART_LSR_OE | UART_LSR_PE | UART_LSR_FE | UART_LSR_BI | UART_LSR_RXFE);
+		
+		isOverflow = (tmp1 & UART_LSR_OE) != 0;
+		isFrameError = (tmp1 & UART_LSR_FE) != 0;
+		if((!isOverflow) && (!isFrameError) && (tmp != 0)) {
+			isFrameError = true;
+		}
+    }
+ 
+    // Receive Data Available or Character time-out
+    if ((tmp == UART_IIR_INTID_RDA) || (tmp == UART_IIR_INTID_CTI)){
+		//data = UART_ReceiveByte((LPC_UART_TypeDef*)LPC_UART3);
+		rLen = UART_Receive((LPC_UART_TypeDef*)LPC_UART3, &data, 1, NONE_BLOCKING);
+		if(rLen != 0) {
+			// Caae?aai aaiiua
+			if(data == 0xAC) {
+				index = 0;
+			}
+			else {
+				if(index < (sizeof(HvPaket_t)))
+					ptr[index++] = data;
+			}
+		}
+    }
+ 
+    // Transmit Holding Empty
+    if (tmp == UART_IIR_INTID_THRE){
+		//UART_IntTransmit();
+		send_hv_data();
+    }
+	
+}
+		
+void usart3_init(uint32_t baudrate, uint8_t stopBits) {
+	UART_CFG_Type cfg;
+	cfg.Baud_rate = baudrate;
+	cfg.Databits = UART_DATABIT_8;
+	cfg.Parity = UART_PARITY_NONE;
+	cfg.Stopbits = (stopBits == 1) ? UART_STOPBIT_1 : UART_STOPBIT_2;
+	
+	UART_Init((LPC_UART_TypeDef*)LPC_UART3, &cfg);
+	
+	//UART_IntConfig((LPC_UART_TypeDef*)LPC_UART3, UART_INTCFG_RLS, ENABLE);
+	UART_IntConfig((LPC_UART_TypeDef*)LPC_UART3, UART_INTCFG_THRE, ENABLE);
+	UART_IntConfig((LPC_UART_TypeDef*)LPC_UART3, UART_INTCFG_RBR, ENABLE);
+	
+	UART_TxCmd((LPC_UART_TypeDef*)LPC_UART3, ENABLE);
+}	
+	
+
+

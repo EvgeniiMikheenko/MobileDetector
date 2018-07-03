@@ -1,0 +1,13 @@
+.\main.o: main.c
+.\main.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.H
+.\main.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h
+.\main.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\main.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h
+.\main.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h
+.\main.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h
+.\main.o: ..\sip_keil\lpc17xx_lib\include\lpc17xx_pinsel.h
+.\main.o: ..\sip_keil\lpc17xx_lib\include\lpc_types.h
+.\main.o: ..\sip_keil\lpc17xx_lib\include\lpc17xx_uart.h
+.\main.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\string.h
+.\main.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdbool.h
+.\main.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdio.h

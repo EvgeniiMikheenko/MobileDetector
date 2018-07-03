@@ -1,0 +1,9 @@
+.\output\portserial_m.o: FreeModbus\port\rtt\portserial_m.c
+.\output\portserial_m.o: .\FreeModbus\port\port.h
+.\output\portserial_m.o: .\FreeModbus\modbus\include\mbconfig.h
+.\output\portserial_m.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\assert.h
+.\output\portserial_m.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\inttypes.h
+.\output\portserial_m.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\output\portserial_m.o: .\FreeModbus\modbus\include\mb.h
+.\output\portserial_m.o: .\FreeModbus\modbus\include\mbport.h
+.\output\portserial_m.o: .\FreeModbus\modbus\include\mbproto.h

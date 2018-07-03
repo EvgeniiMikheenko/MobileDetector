@@ -1,0 +1,15 @@
+D:\work\VS12\Projects\Libs\common.plugins\bin\Debug\common.plugins.dll
+D:\work\VS12\Projects\Libs\common.plugins\bin\Debug\common.plugins.pdb
+D:\work\VS12\Projects\Libs\common.plugins\obj\Debug\common.plugins.dll
+D:\work\VS12\Projects\Libs\common.plugins\obj\Debug\common.plugins.pdb
+D:\work\VS12\Projects\Libs\common.plugins\obj\Debug\common.plugins.csprojResolveAssemblyReference.cache
+F:\work\VS13\Projects\Libs\common.plugins\bin\Debug\common.plugins.dll
+F:\work\VS13\Projects\Libs\common.plugins\bin\Debug\common.plugins.pdb
+F:\work\VS13\Projects\Libs\common.plugins\obj\Debug\common.plugins.csprojResolveAssemblyReference.cache
+F:\work\VS13\Projects\Libs\common.plugins\obj\Debug\common.plugins.dll
+F:\work\VS13\Projects\Libs\common.plugins\obj\Debug\common.plugins.pdb
+D:\work\VS13\Projects\Libs\common.plugins\bin\Debug\common.plugins.dll
+D:\work\VS13\Projects\Libs\common.plugins\bin\Debug\common.plugins.pdb
+D:\work\VS13\Projects\Libs\common.plugins\obj\Debug\common.plugins.dll
+D:\work\VS13\Projects\Libs\common.plugins\obj\Debug\common.plugins.pdb
+D:\work\VS13\Projects\Libs\common.plugins\obj\Debug\common.plugins.csprojResolveAssemblyReference.cache

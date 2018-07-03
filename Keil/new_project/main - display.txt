@@ -1,0 +1,112 @@
+#include <LPC17xx.H>
+#include <system_LPC17xx.h>
+//#include <lpc17xx_pinsel.h>
+//#include <lpc17xx_gpio.h>
+//#include <lpc17xx_systick.h>
+#include <lpc17xx_uart.h>
+#include <lpc17xx_ssp.h>
+
+#include <stdbool.h>
+#include <stdlib.h>
+#include <stdint.h>
+
+void delay_cycles(uint32_t count);
+
+int main() {
+	LPC_SC -> PCONP |= 0x8400;
+	LPC_SC -> PCLKSEL0 = (1 << 20);
+//	LPC_SSP1 -> CPSR = 0x2;
+	LPC_PINCON -> PINSEL0 = 0x88000;
+//	LPC_PINCON -> PINMODE0 |= 0xC0;
+	LPC_GPIO0->FIODIR |= (1 << 3);
+	LPC_GPIO0->FIOSET = (1 << 3);
+		
+	
+//	typedef struct {
+//	uint32_t Databit; 		/** Databit number, should be SSP_DATABIT_x,
+//							where x is in range from 4 - 16 */
+//	uint32_t CPHA;			/** Clock phase, should be:
+//							- SSP_CPHA_FIRST: first clock edge
+//							- SSP_CPHA_SECOND: second clock edge */
+//	uint32_t CPOL;			/** Clock polarity, should be:
+//							- SSP_CPOL_HI: high level
+//							- SSP_CPOL_LO: low level */
+//	uint32_t Mode;			/** SSP mode, should be:
+//							- SSP_MASTER_MODE: Master mode
+//							- SSP_SLAVE_MODE: Slave mode */
+//	uint32_t FrameFormat;	/** Frame Format:
+//							- SSP_FRAME_SPI: Motorola SPI frame format
+//							- SSP_FRAME_TI: TI frame format
+//							- SSP_FRAME_MICROWIRE: National Microwire frame format */
+//	uint32_t ClockRate;		/** Clock rate,in Hz */
+//} SSP_CFG_Type;
+	
+	
+	
+	
+	SSP_CFG_Type cfgin;
+
+	cfgin.Databit = SSP_DATABIT_16;
+	cfgin.CPHA = SSP_CPHA_FIRST;
+	cfgin.CPOL = SSP_CPOL_HI;
+	cfgin.Mode = SSP_MASTER_MODE;
+	cfgin.FrameFormat = SSP_FRAME_SPI;
+	cfgin.ClockRate = 500000;
+
+
+
+	
+	
+	SSP_Init(LPC_SSP1, &cfgin);
+	SSP_Cmd(LPC_SSP1, ENABLE);
+	
+	//#define FUNC_SET_IND 			Write_Ind(0xF828); //Func_set
+	//#define DISP_ON_IND  			Write_Ind(0xF80C); //Disp On
+	LPC_GPIO0->FIOCLR = (1 << 3);
+	delay_cycles(10);
+	SSP_SendData(LPC_SSP1, 0xF80C);
+	delay_cycles(100);
+	SSP_SendData(LPC_SSP1, 0xF828);
+	int i = 0;
+	uint16_t data=0xFA38;
+	uint16_t clear=0xF801;
+	uint16_t home=0xF802;
+	SSP_SendData(LPC_SSP1, clear);
+	SSP_SendData(LPC_SSP1, home);
+
+	
+	//LPC_GPIO0->FIOCLR = (1 << 3);
+	
+	for(int k=0;k <= 3;i++) {
+		
+		
+		delay_cycles(1000);
+		LPC_GPIO0->FIOCLR = (1 << 3);
+		delay_cycles(10);
+		SSP_SendData(LPC_SSP1, data+i);
+		delay_cycles(1000);
+		LPC_GPIO0->FIOSET = (1 << 3);
+		
+		
+		if (i == 30){
+			i-=9;
+			k++;
+		};
+		
+		
+	}
+	
+	SSP_SendData(LPC_SSP1, home);
+	SSP_SendData(LPC_SSP1, clear);
+	while(1){
+	}
+}
+	
+void delay_cycles(uint32_t count) {
+	volatile uint32_t x = count;
+	while((--x) > 0) {
+		
+	}
+}
+
+

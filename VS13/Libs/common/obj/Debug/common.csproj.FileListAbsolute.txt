@@ -1,0 +1,15 @@
+D:\work\VS12\Projects\Libs\common\bin\Debug\common.dll
+D:\work\VS12\Projects\Libs\common\bin\Debug\common.pdb
+D:\work\VS12\Projects\Libs\common\obj\Debug\common.dll
+D:\work\VS12\Projects\Libs\common\obj\Debug\common.pdb
+D:\work\VS12\Projects\Libs\common\obj\Debug\common.csprojResolveAssemblyReference.cache
+F:\work\VS13\Projects\Libs\common\bin\Debug\common.dll
+F:\work\VS13\Projects\Libs\common\bin\Debug\common.pdb
+F:\work\VS13\Projects\Libs\common\obj\Debug\common.csprojResolveAssemblyReference.cache
+F:\work\VS13\Projects\Libs\common\obj\Debug\common.dll
+F:\work\VS13\Projects\Libs\common\obj\Debug\common.pdb
+D:\work\VS13\Projects\Libs\common\bin\Debug\common.dll
+D:\work\VS13\Projects\Libs\common\bin\Debug\common.pdb
+D:\work\VS13\Projects\Libs\common\obj\Debug\common.dll
+D:\work\VS13\Projects\Libs\common\obj\Debug\common.pdb
+D:\work\VS13\Projects\Libs\common\obj\Debug\common.csprojResolveAssemblyReference.cache

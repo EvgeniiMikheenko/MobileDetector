@@ -1,0 +1,9 @@
+.\output\portevent.o: FreeModbus\port\rtt\portevent.c
+.\output\portevent.o: .\FreeModbus\modbus\include\mb.h
+.\output\portevent.o: .\FreeModbus\port\port.h
+.\output\portevent.o: .\FreeModbus\modbus\include\mbconfig.h
+.\output\portevent.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\assert.h
+.\output\portevent.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\inttypes.h
+.\output\portevent.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\output\portevent.o: .\FreeModbus\modbus\include\mbport.h
+.\output\portevent.o: .\FreeModbus\modbus\include\mbproto.h

@@ -1,0 +1,17 @@
+.\output\mbrtu.o: freemodbus\modbus\rtu\mbrtu.c
+.\output\mbrtu.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdlib.h
+.\output\mbrtu.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\string.h
+.\output\mbrtu.o: .\freemodbus\lpc1768\port\port.h
+.\output\mbrtu.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\assert.h
+.\output\mbrtu.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.H
+.\output\mbrtu.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h
+.\output\mbrtu.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\output\mbrtu.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h
+.\output\mbrtu.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h
+.\output\mbrtu.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h
+.\output\mbrtu.o: .\freemodbus\modbus\include\mb.h
+.\output\mbrtu.o: .\freemodbus\modbus\include\mbport.h
+.\output\mbrtu.o: .\freemodbus\modbus\include\mbproto.h
+.\output\mbrtu.o: freemodbus\modbus\rtu\mbrtu.h
+.\output\mbrtu.o: .\freemodbus\modbus\include\mbframe.h
+.\output\mbrtu.o: freemodbus\modbus\rtu\mbcrc.h

@@ -1,0 +1,14 @@
+.\output\porttimer.o: freemodbus\lpc1768\port\porttimer.c
+.\output\porttimer.o: freemodbus\lpc1768\port\port.h
+.\output\porttimer.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\assert.h
+.\output\porttimer.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\LPC17xx.H
+.\output\porttimer.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cm3.h
+.\output\porttimer.o: C:\Keil_4_74\ARM\ARMCC\bin\..\include\stdint.h
+.\output\porttimer.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmInstr.h
+.\output\porttimer.o: ..\sip_keil\lpc17xx_lib\cmsis\core_cmFunc.h
+.\output\porttimer.o: ..\sip_keil\lpc17xx_lib\cmsis_boot\system_LPC17xx.h
+.\output\porttimer.o: ..\sip_keil\lpc17xx_lib\include\lpc17xx_timer.h
+.\output\porttimer.o: ..\sip_keil\lpc17xx_lib\include\lpc_types.h
+.\output\porttimer.o: .\freemodbus\modbus\include\mb.h
+.\output\porttimer.o: .\freemodbus\modbus\include\mbport.h
+.\output\porttimer.o: .\freemodbus\modbus\include\mbproto.h

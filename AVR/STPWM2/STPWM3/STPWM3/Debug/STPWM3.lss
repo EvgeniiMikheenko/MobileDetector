@@ -1,0 +1,232 @@
+
+STPWM3.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000146  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000000f2  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000146  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000178  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000070  00000000  00000000  000001b8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000005ab  00000000  00000000  00000228  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000379  00000000  00000000  000007d3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000110d  00000000  00000000  00000b4c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  0000008c  00000000  00000000  00001c5c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000108c9  00000000  00000000  00001ce8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000011a  00000000  00000000  000125b1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000040  00000000  00000000  000126cb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_macro  00000a74  00000000  00000000  0001270b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	3d c0       	rjmp	.+122    	; 0x7c <__ctors_end>
+   2:	00 00       	nop
+   4:	56 c0       	rjmp	.+172    	; 0xb2 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	54 c0       	rjmp	.+168    	; 0xb2 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	52 c0       	rjmp	.+164    	; 0xb2 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	50 c0       	rjmp	.+160    	; 0xb2 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	4e c0       	rjmp	.+156    	; 0xb2 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4c c0       	rjmp	.+152    	; 0xb2 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4a c0       	rjmp	.+148    	; 0xb2 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	48 c0       	rjmp	.+144    	; 0xb2 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	46 c0       	rjmp	.+140    	; 0xb2 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	44 c0       	rjmp	.+136    	; 0xb2 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	42 c0       	rjmp	.+132    	; 0xb2 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	40 c0       	rjmp	.+128    	; 0xb2 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	3e c0       	rjmp	.+124    	; 0xb2 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3c c0       	rjmp	.+120    	; 0xb2 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3a c0       	rjmp	.+116    	; 0xb2 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	38 c0       	rjmp	.+112    	; 0xb2 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	36 c0       	rjmp	.+108    	; 0xb2 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	34 c0       	rjmp	.+104    	; 0xb2 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	32 c0       	rjmp	.+100    	; 0xb2 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	30 c0       	rjmp	.+96     	; 0xb2 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	2e c0       	rjmp	.+92     	; 0xb2 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2c c0       	rjmp	.+88     	; 0xb2 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2a c0       	rjmp	.+84     	; 0xb2 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	28 c0       	rjmp	.+80     	; 0xb2 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	26 c0       	rjmp	.+76     	; 0xb2 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	24 c0       	rjmp	.+72     	; 0xb2 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	22 c0       	rjmp	.+68     	; 0xb2 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	20 c0       	rjmp	.+64     	; 0xb2 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	1e c0       	rjmp	.+60     	; 0xb2 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1c c0       	rjmp	.+56     	; 0xb2 <__bad_interrupt>
+	...
+
+0000007c <__ctors_end>:
+  7c:	11 24       	eor	r1, r1
+  7e:	1f be       	out	0x3f, r1	; 63
+  80:	cf ef       	ldi	r28, 0xFF	; 255
+  82:	d4 e0       	ldi	r29, 0x04	; 4
+  84:	de bf       	out	0x3e, r29	; 62
+  86:	cd bf       	out	0x3d, r28	; 61
+
+00000088 <__do_copy_data>:
+  88:	11 e0       	ldi	r17, 0x01	; 1
+  8a:	a0 e0       	ldi	r26, 0x00	; 0
+  8c:	b1 e0       	ldi	r27, 0x01	; 1
+  8e:	e2 ef       	ldi	r30, 0xF2	; 242
+  90:	f0 e0       	ldi	r31, 0x00	; 0
+  92:	02 c0       	rjmp	.+4      	; 0x98 <__do_copy_data+0x10>
+  94:	05 90       	lpm	r0, Z+
+  96:	0d 92       	st	X+, r0
+  98:	a0 30       	cpi	r26, 0x00	; 0
+  9a:	b1 07       	cpc	r27, r17
+  9c:	d9 f7       	brne	.-10     	; 0x94 <__do_copy_data+0xc>
+
+0000009e <__do_clear_bss>:
+  9e:	21 e0       	ldi	r18, 0x01	; 1
+  a0:	a0 e0       	ldi	r26, 0x00	; 0
+  a2:	b1 e0       	ldi	r27, 0x01	; 1
+  a4:	01 c0       	rjmp	.+2      	; 0xa8 <.do_clear_bss_start>
+
+000000a6 <.do_clear_bss_loop>:
+  a6:	1d 92       	st	X+, r1
+
+000000a8 <.do_clear_bss_start>:
+  a8:	a0 30       	cpi	r26, 0x00	; 0
+  aa:	b2 07       	cpc	r27, r18
+  ac:	e1 f7       	brne	.-8      	; 0xa6 <.do_clear_bss_loop>
+  ae:	18 d0       	rcall	.+48     	; 0xe0 <main>
+  b0:	1e c0       	rjmp	.+60     	; 0xee <_exit>
+
+000000b2 <__bad_interrupt>:
+  b2:	a6 cf       	rjmp	.-180    	; 0x0 <__vectors>
+
+000000b4 <sysclk_init>:
+#if !MEGA_XX_UN0 && !MEGA_XX_UN1
+	uint8_t *reg = (uint8_t *)&(POWER_REG_ADD);
+	uint8_t i;
+	/* Turn off all peripheral clocks that can be turned off. */
+	for (i = 0; i < NUMBER_OF_POWER_REG; i++) {
+		*(reg++) = 0xFF;
+  b4:	8f ef       	ldi	r24, 0xFF	; 255
+  b6:	80 93 64 00 	sts	0x0064, r24
+  ba:	80 93 65 00 	sts	0x0065, r24
+	}
+#endif
+#if !MEGA_UNSPECIFIED && !MEGA_XX
+	/* Set up system clock prescalers if different from defaults */
+	if ((CONFIG_SYSCLK_PSDIV != SYSCLK_PSDIV_8) ||
+			(SYSCLK_PSDIV_8 != CLKPR)) {
+  be:	80 91 61 00 	lds	r24, 0x0061
+		*(reg++) = 0xFF;
+	}
+#endif
+#if !MEGA_UNSPECIFIED && !MEGA_XX
+	/* Set up system clock prescalers if different from defaults */
+	if ((CONFIG_SYSCLK_PSDIV != SYSCLK_PSDIV_8) ||
+  c2:	83 30       	cpi	r24, 0x03	; 3
+  c4:	59 f0       	breq	.+22     	; 0xdc <sysclk_init+0x28>
+
+typedef uint8_t irqflags_t;
+
+static inline irqflags_t cpu_irq_save(void)
+{
+	irqflags_t flags = SREG;
+  c6:	8f b7       	in	r24, 0x3f	; 63
+	cpu_irq_disable();
+  c8:	f8 94       	cli
+static inline void sysclk_set_prescalers(uint8_t psdiv)
+{
+#if !MEGA_UNSPECIFIED
+	irqflags_t flags = cpu_irq_save();
+
+	ASM(
+  ca:	5f 93       	push	r21
+  cc:	50 e8       	ldi	r21, 0x80	; 128
+  ce:	50 93 61 00 	sts	0x0061, r21
+  d2:	53 e0       	ldi	r21, 0x03	; 3
+  d4:	50 93 61 00 	sts	0x0061, r21
+  d8:	5f 91       	pop	r21
+}
+
+static inline void cpu_irq_restore(irqflags_t flags)
+{
+	barrier();
+	SREG = flags;
+  da:	8f bf       	out	0x3f, r24	; 63
+  dc:	08 95       	ret
+
+000000de <board_init>:
+#include <asf.h>
+#include <board.h>
+#include <conf_board.h>
+
+void board_init(void)
+{
+  de:	08 95       	ret
+
+000000e0 <main>:
+
+
+int main (void)
+{
+	/* Insert system clock initialization code here (sysclk_init()). */
+	sysclk_init();
+  e0:	e9 df       	rcall	.-46     	; 0xb4 <sysclk_init>
+	board_init();
+  e2:	fd df       	rcall	.-6      	; 0xde <board_init>
+		
+		DDRC = 0xFF;
+  e4:	8f ef       	ldi	r24, 0xFF	; 255
+  e6:	87 b9       	out	0x07, r24	; 7
+		
+		PORTC = 0xA7;
+  e8:	87 ea       	ldi	r24, 0xA7	; 167
+  ea:	88 b9       	out	0x08, r24	; 8
+	
+	while(1)
+	{
+	
+	};
+  ec:	ff cf       	rjmp	.-2      	; 0xec <main+0xc>
+
+000000ee <_exit>:
+  ee:	f8 94       	cli
+
+000000f0 <__stop_program>:
+  f0:	ff cf       	rjmp	.-2      	; 0xf0 <__stop_program>
